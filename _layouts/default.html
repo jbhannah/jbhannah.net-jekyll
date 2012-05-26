@@ -5,6 +5,13 @@
   </head>
   <body>
     {% include header.html %}
-    {{ content }}
+
+    <div id="content">
+      {{ content }}
+    </div>
+
+    {% include sidebar.html %}
+
+    {% include footer.html %}
   </body>
 </html>
