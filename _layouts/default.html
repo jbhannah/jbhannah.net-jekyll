@@ -14,7 +14,10 @@
       <div id="root_header"></div>
 
       <div id="main">
-        {% include header.html %}
+        <header id="header">
+          <h1>{{ site.name }}</h1>
+          <h2>{{ site.nickname }}</h2>
+        </header>
 
         <section id="content">
           {{ content }}
@@ -26,6 +29,17 @@
       <div id="root_footer"></div>
     </div>
 
-    {% include footer.html %}
+    <footer id="footer">
+      Copyright &copy; {{ site.time | date: "%Y" }} <a href="{{ site.url }}">{{ site.name }}</a>.
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <script>
+      var _gaq=[['_setAccount','UA-29322890-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </body>
 </html>
