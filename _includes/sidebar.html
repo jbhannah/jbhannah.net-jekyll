@@ -2,6 +2,8 @@
   <a href="/"><img alt="Jesse B. Hannah" title="Jesse B. Hannah" id="avatar" src="/images/avatar.png" /></a>
 
   <nav id="social_menu">
-    Social media links go here
+    <ul>
+      {% for s in site.social %}<li id="{{ s.abbr }}"><a href="{{ s.url }}"><img src="/images/social/{{ s.abbr }}.png" class="social_icon" alt="{{ s.name }}" title="{{ s.name }}" /></a></li>{% endfor %}
+    </ul>
   </nav>
 </aside>

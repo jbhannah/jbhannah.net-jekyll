@@ -5,3 +5,23 @@ exclude: [.rvmrc]
 
 name:     Jesse B. Hannah
 nickname: jbhannah
+
+social:
+  - abbr: fb
+    name: Facebook
+    url:  https://www.facebook.com/jbhannah
+  - abbr: twitter
+    name: Twitter
+    url:  https://twitter.com/jbhannah
+  - abbr: linkedin
+    name: LinkedIn
+    url:  https://www.linkedin.com/in/jbhannah
+  - abbr: flickr
+    name: Flickr
+    url:  http://www.flickr.com/photos/jbhannah
+  - abbr: gh
+    name: GitHub
+    url:  https://github.com/jbhannah
+  - abbr: gplus
+    name: Google+
+    url:  https://plus.google.com/115963221291991585027
