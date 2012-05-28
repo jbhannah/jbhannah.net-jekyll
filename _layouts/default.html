@@ -6,7 +6,7 @@
 
     <link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
-    <script src="/scripts/modernizr.js"></script>
+    <script src="/js/modernizr.js"></script>
   </head>
 
   <body>
@@ -30,10 +30,8 @@
     </div>
 
     <footer id="footer">
-      Copyright &copy; {{ site.time | date: "%Y" }} <a href="{{ site.url }}">{{ site.name }}</a>.
+      Copyright © {{ site.time | date: "%Y" }} <a href="{{ site.url }}">{{ site.name }}</a>.
     </footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
     <script>
       var _gaq=[['_setAccount','UA-29322890-1'],['_trackPageview']];
@@ -41,5 +39,8 @@
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
