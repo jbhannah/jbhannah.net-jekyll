@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>{{ site.name }}</title>
   </head>
+
   <body>
-    {% include header.html %}
+    <div id="root">
+      <div id="root_header"></div>
 
-    <div id="content">
-      {{ content }}
+      <div id="main">
+        {% include header.html %}
+
+        <section id="content">
+          {{ content }}
+        </section>
+
+        {% include sidebar.html %}
+      </div>
+
+      <div id="root_footer"></div>
     </div>
-
-    {% include sidebar.html %}
 
     {% include footer.html %}
   </body>
