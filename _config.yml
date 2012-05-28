@@ -1,5 +1,7 @@
 auto: true
 url:  http://jbhannah.net/
 
+exclude: [.rvmrc]
+
 name:     Jesse B. Hannah
 nickname: jbhannah
