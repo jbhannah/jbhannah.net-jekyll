@@ -15,7 +15,7 @@
     <script src="/js/modernizr.js"></script>
   </head>
 
-  <body>
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     <div id="root">
       <div id="root_header"></div>
 

@@ -1,5 +1,6 @@
 ---
 layout: default
+body_class: index
 ---
 
 {{ site.name }} is a 23-year-old
