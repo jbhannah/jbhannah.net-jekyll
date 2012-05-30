@@ -1,7 +1,7 @@
 auto: true
 url:  http://jbhannah.net/
 
-exclude: [.rvmrc, Gemfile]
+exclude: [.rvmrc, Gemfile, Gemfile.lock, Procfile]
 
 name:     Jesse B. Hannah
 nickname: jbhannah
