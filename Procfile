@@ -1,1 +1,2 @@
-jekyll: jekyll --server
+jekyll:  jekyll --server
+compass: compass watch -c compass.rb
