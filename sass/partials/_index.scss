@@ -1,4 +1,4 @@
-body.index {
+body.index, body.err404 {
   div#root {
     div#root_header {
       padding-top: 5em;
@@ -67,4 +67,8 @@ body.index {
       }
     }
   }
+}
+
+body.err404 section#content {
+  text-align: center;
 }

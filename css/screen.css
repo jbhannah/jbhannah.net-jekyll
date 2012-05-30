@@ -1422,11 +1422,11 @@ body footer#footer {
 }
 
 /* line 3, ../sass/partials/_index.scss */
-body.index div#root div#root_header {
+body.index div#root div#root_header, body.err404 div#root div#root_header {
   padding-top: 5em;
 }
 /* line 7, ../sass/partials/_index.scss */
-body.index div#root div#main {
+body.index div#root div#main, body.err404 div#root div#main {
   display: inline;
   float: left;
   margin-right: 0;
@@ -1435,11 +1435,11 @@ body.index div#root div#main {
   padding-right: 160px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.index div#root div#main {
+* html body.index div#root div#main, * html body.err404 div#root div#main {
   overflow-x: hidden;
 }
 /* line 12, ../sass/partials/_index.scss */
-body.index div#root div#main header#header {
+body.index div#root div#main header#header, body.err404 div#root div#main header#header {
   display: inline;
   float: left;
   margin-right: 0;
@@ -1448,11 +1448,11 @@ body.index div#root div#main header#header {
   margin-bottom: 1.5em;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.index div#root div#main header#header {
+* html body.index div#root div#main header#header, * html body.err404 div#root div#main header#header {
   overflow-x: hidden;
 }
 /* line 18, ../sass/partials/_index.scss */
-body.index div#root div#main header#header hgroup#site_title {
+body.index div#root div#main header#header hgroup#site_title, body.err404 div#root div#main header#header hgroup#site_title {
   display: inline;
   float: left;
   margin-right: 0;
@@ -1460,22 +1460,22 @@ body.index div#root div#main header#header hgroup#site_title {
   padding-left: 200px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.index div#root div#main header#header hgroup#site_title {
+* html body.index div#root div#main header#header hgroup#site_title, * html body.err404 div#root div#main header#header hgroup#site_title {
   overflow-x: hidden;
 }
 /* line 24, ../sass/partials/_index.scss */
-body.index div#root div#main section#content {
+body.index div#root div#main section#content, body.err404 div#root div#main section#content {
   display: inline;
   float: left;
   margin-right: 0;
   width: 630px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.index div#root div#main section#content {
+* html body.index div#root div#main section#content, * html body.err404 div#root div#main section#content {
   overflow-x: hidden;
 }
 /* line 29, ../sass/partials/_index.scss */
-body.index div#root aside#sidebar {
+body.index div#root aside#sidebar, body.err404 div#root aside#sidebar {
   display: inline;
   float: left;
   margin-right: 0;
@@ -1487,11 +1487,11 @@ body.index div#root aside#sidebar {
   position: relative;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.index div#root aside#sidebar {
+* html body.index div#root aside#sidebar, * html body.err404 div#root aside#sidebar {
   overflow-x: hidden;
 }
 /* line 35, ../sass/partials/_index.scss */
-body.index div#root aside#sidebar nav#social_menu {
+body.index div#root aside#sidebar nav#social_menu, body.err404 div#root aside#sidebar nav#social_menu {
   display: inline;
   float: left;
   margin-right: 0;
@@ -1501,11 +1501,11 @@ body.index div#root aside#sidebar nav#social_menu {
   bottom: 0;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.index div#root aside#sidebar nav#social_menu {
+* html body.index div#root aside#sidebar nav#social_menu, * html body.err404 div#root aside#sidebar nav#social_menu {
   overflow-x: hidden;
 }
 /* line 42, ../sass/partials/_index.scss */
-body.index div#root aside#sidebar nav#social_menu ul {
+body.index div#root aside#sidebar nav#social_menu ul, body.err404 div#root aside#sidebar nav#social_menu ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -1514,7 +1514,7 @@ body.index div#root aside#sidebar nav#social_menu ul {
   float: right;
 }
 /* line 60, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-body.index div#root aside#sidebar nav#social_menu ul li {
+body.index div#root aside#sidebar nav#social_menu ul li, body.err404 div#root aside#sidebar nav#social_menu ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1525,32 +1525,37 @@ body.index div#root aside#sidebar nav#social_menu ul li {
   padding-right: 4px;
 }
 /* line 48, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-body.index div#root aside#sidebar nav#social_menu ul li:first-child, body.index div#root aside#sidebar nav#social_menu ul li.first {
+body.index div#root aside#sidebar nav#social_menu ul li:first-child, body.index div#root aside#sidebar nav#social_menu ul li.first, body.err404 div#root aside#sidebar nav#social_menu ul li:first-child, body.err404 div#root aside#sidebar nav#social_menu ul li.first {
   padding-left: 0;
 }
 /* line 49, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-body.index div#root aside#sidebar nav#social_menu ul li:last-child {
+body.index div#root aside#sidebar nav#social_menu ul li:last-child, body.err404 div#root aside#sidebar nav#social_menu ul li:last-child {
   padding-right: 0;
 }
 /* line 50, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-body.index div#root aside#sidebar nav#social_menu ul li.last {
+body.index div#root aside#sidebar nav#social_menu ul li.last, body.err404 div#root aside#sidebar nav#social_menu ul li.last {
   padding-right: 0;
 }
 /* line 48, ../sass/partials/_index.scss */
-body.index div#root aside#sidebar nav#social_menu ul li:first-child {
+body.index div#root aside#sidebar nav#social_menu ul li:first-child, body.err404 div#root aside#sidebar nav#social_menu ul li:first-child {
   padding-left: 0;
 }
 /* line 52, ../sass/partials/_index.scss */
-body.index div#root aside#sidebar nav#social_menu ul li:last-child {
+body.index div#root aside#sidebar nav#social_menu ul li:last-child, body.err404 div#root aside#sidebar nav#social_menu ul li:last-child {
   padding-right: 0;
 }
 /* line 56, ../sass/partials/_index.scss */
-body.index div#root aside#sidebar nav#social_menu ul li a {
+body.index div#root aside#sidebar nav#social_menu ul li a, body.err404 div#root aside#sidebar nav#social_menu ul li a {
   display: block;
   height: 48px;
   width: 48px;
 }
 /* line 61, ../sass/partials/_index.scss */
-body.index div#root aside#sidebar nav#social_menu ul li a img.social_icon {
+body.index div#root aside#sidebar nav#social_menu ul li a img.social_icon, body.err404 div#root aside#sidebar nav#social_menu ul li a img.social_icon {
   width: 48px;
+}
+
+/* line 72, ../sass/partials/_index.scss */
+body.err404 section#content {
+  text-align: center;
 }
