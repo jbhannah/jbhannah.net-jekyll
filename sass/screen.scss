@@ -12,7 +12,7 @@ $blueprint-font-size: 16px;
 @import "compass/typography/lists/horizontal-list";
 @import "compass/typography/lists/inline-list";
 
-$footer-height: 2em;
+$footer-height: 3em;
 
 @import "compass/layout/sticky-footer";
 @include sticky-footer;

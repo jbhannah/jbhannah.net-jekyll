@@ -1250,18 +1250,18 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -2em;
+  margin-bottom: -3em;
 }
 /* line 18, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #root #root_footer {
-  height: 2em;
+  height: 3em;
 }
 
 /* line 20, ../../../.rvm/gems/ruby-1.9.3-p194@jbhannah.github.com/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
 #footer {
   clear: both;
   position: relative;
-  height: 2em;
+  height: 3em;
 }
 
 /* line 20, ../sass/screen.scss */
@@ -1274,7 +1274,7 @@ body div#root {
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
-  margin-bottom: -2em;
+  margin-bottom: -3em;
 }
 /* line 28, ../sass/screen.scss */
 body div#root div#root_header {
@@ -1411,7 +1411,7 @@ body div#root aside#sidebar nav#social_menu ul li img.social_icon {
 }
 /* line 87, ../sass/screen.scss */
 body div#root div#root_footer {
-  height: 3em;
+  height: 4em;
   clear: both;
 }
 /* line 93, ../sass/screen.scss */
