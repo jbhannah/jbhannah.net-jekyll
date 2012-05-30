@@ -21,16 +21,19 @@
 
       <div id="main">
         <header id="header">
-          <h1>{{ site.name }}</h1>
-          <h2>{{ site.nickname }}</h2>
+          <hgroup id="site_title">
+            <h1>{{ site.name }}</h1>
+            <h2>{{ site.nickname }}</h2>
+          </hgroup>
         </header>
 
         <section id="content">
           {{ content }}
         </section>
 
-        {% include sidebar.html %}
       </div>
+
+      {% include sidebar.html %}
 
       <div id="root_footer"></div>
     </div>

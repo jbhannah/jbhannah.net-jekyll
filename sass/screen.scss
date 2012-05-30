@@ -1,55 +1,98 @@
-// This import applies a global reset to any page that imports this stylesheet.
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+$blueprint-font-family: "Droid Serif", "Georgia", "Times New Roman", serif;
+$blueprint-font-size: 16px;
+
 @import "blueprint/reset";
-
-// To configure blueprint, edit the partials/base.sass file.
 @import "partials/base";
-
-// Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
 
-// Import the non-default scaffolding module.
-@import "blueprint/scaffolding";
+@include blueprint;
 
-// To generate css equivalent to the blueprint css but with your
-// configuration applied, uncomment:
-// @include blueprint
+@import "compass/typography/lists/horizontal-list";
+@import "compass/typography/lists/inline-list";
 
-// If you are doing a lot of stylesheet concatenation, it is suggested
-// that you scope your blueprint styles, so that you can better control
-// what pages use blueprint when stylesheets are concatenated together.
-body.bp {
-  @include blueprint-typography(true);
-  @include blueprint-utilities;
-  @include blueprint-debug;
-  @include blueprint-interaction;
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
-}
+$footer-height: 2em;
 
-form.bp {
-  @include blueprint-form;
-  // You'll probably want to remove the scaffolding once you start styling your site.
-  @include blueprint-scaffolding;
-}
+@import "compass/layout/sticky-footer";
+@include sticky-footer;
 
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col {
-  #container {
+body {
+  background: $blueprint-background-color;
+
+  div#root {
     @include container;
+
+    margin-bottom: -1 * $footer-height;
+
+    div#root_header {
+      padding-top: 1em;
+    }
+
+    div#main {
+      @include column(18, true);
+      @include prepend(6);
+
+      header#header {
+        @include column(18, true);
+
+        hgroup#site_title {
+          @include column(18, true);
+
+          text-align: right;
+        }
+      }
+
+      section#content {
+        @include column(18, true);
+      }
+    }
+
+    aside#sidebar {
+      @include column(5);
+      @include pull(24, true);
+
+      font-size: 80%;
+
+      img#avatar {
+        @include column(5);
+      }
+
+      nav#social_menu {
+        @include column(5);
+
+        clear: both;
+        padding-top: 4px;
+
+        ul {
+          @include horizontal-list(3px);
+
+          li {
+            &:first-child {
+              padding-left: 2px;
+            }
+
+            &:last-child {
+              padding-right: 2px;
+            }
+
+            img.social_icon {
+              width: 26px;
+            }
+          }
+        }
+      }
+    }
+
+    div#root_footer {
+      height: $footer-height + 1em;
+      clear: both;
+    }
   }
-  #header, #footer {
-    @include column($blueprint-grid-columns);
-  }
-  #sidebar {
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    @include column($sidebar-columns);
-  }
-  #content {
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    // true means it's the last column in the row
-    @include column($content-columns, true);
+
+  footer#footer {
+    width: 100%;
+    text-align: center;
+    font-size: smaller;
   }
 }
