@@ -22,11 +22,13 @@ namespace :new do
       front << "title:     #{args.title.titleize}"
       front << "published: false"
       front << "---"
-      front << ""
+      front << "" << "" << ""
 
       f = File.new(filename, 'w+')
       f << front.join("\n")
       f.close
+
+      sh %{ vi -c start + #{filename} }
     end
   end
 end
