@@ -6,9 +6,9 @@ end
 namespace :new do
   task :post, [:title, :format, :category] do |t, args|
     require 'active_support/inflector'
-    args.with_defaults(format: 'md', category: 'blog')
+    args.with_defaults(format: 'md')
 
-    filename  = args.category + '/_posts/' + Time.now.strftime('%F')
+    filename  = '_posts/' + Time.now.strftime('%F')
     filename += '-' + args.title.parameterize + '.' + args.format
 
     if File.exists?(filename)
