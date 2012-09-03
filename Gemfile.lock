@@ -26,6 +26,7 @@ GEM
       kramdown (~> 0.13)
       liquid (~> 2.3)
       maruku (~> 0.5)
+    kgio (2.7.4)
     kramdown (0.13.8)
     liquid (2.4.1)
     maruku (0.6.0)
@@ -35,10 +36,15 @@ GEM
     rack (1.4.1)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
+    raindrops (0.10.0)
     rake (0.9.2.2)
     sass (3.2.1)
     syntax (1.0.0)
     thor (0.16.0)
+    unicorn (4.3.1)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
@@ -50,3 +56,4 @@ DEPENDENCIES
   jekyll
   rack-contrib
   rake
+  unicorn

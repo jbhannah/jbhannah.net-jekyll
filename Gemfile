@@ -8,3 +8,4 @@ gem "compass"
 gem "foreman"
 
 gem "rack-contrib"
+gem "unicorn"
