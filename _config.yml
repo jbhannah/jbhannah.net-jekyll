@@ -1,5 +1,6 @@
 auto: false
 url:  http://jbhannah.net/
+markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 
 exclude: [compass.rb, config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, sass, unicorn.rb]

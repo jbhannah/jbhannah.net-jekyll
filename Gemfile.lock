@@ -54,6 +54,7 @@ DEPENDENCIES
   compass
   foreman
   jekyll
+  kramdown
   rack-contrib
   rake
   unicorn

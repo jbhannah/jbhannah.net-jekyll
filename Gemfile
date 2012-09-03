@@ -5,7 +5,8 @@ gem "activesupport"
 
 gem "jekyll"
 gem "compass"
-gem "foreman"
+gem "kramdown"
 
+gem "foreman"
 gem "rack-contrib"
 gem "unicorn"
