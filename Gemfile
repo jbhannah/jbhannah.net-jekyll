@@ -4,6 +4,7 @@ gem "rake"
 gem "activesupport"
 
 gem "jekyll"
+gem "RedCloth"
 gem "compass"
 gem "kramdown"
 
