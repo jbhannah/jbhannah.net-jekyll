@@ -4,8 +4,8 @@ body_class: index
 ---
 
 Jesse is a 23-year-old
+physics major at [Arizona State University](http://www.asu.edu/),
 [Mormon](https://mormonorg.lds.org/me/18K9/),
-physics major at [ASU](http://www.asu.edu/),
 web developer,
 sysadmin-in-training,
 Mac addict,
