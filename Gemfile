@@ -6,3 +6,5 @@ gem "activesupport"
 gem "jekyll"
 gem "compass"
 gem "foreman"
+
+gem "rack-contrib"
