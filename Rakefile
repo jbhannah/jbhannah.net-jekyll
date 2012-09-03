@@ -3,6 +3,7 @@ task :start do
   system "bundle exec foreman start"
 end
 
+desc 'Generate static files'
 task :generate do
   system "bundle exec compass compile -c compass.rb"
   system "bundle exec jekyll"
