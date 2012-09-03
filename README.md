@@ -1,2 +1,4 @@
-jbhannah.github.com
-===================
+jbhannah.net
+============
+
+Homepage and weblog of Jesse B. Hannah
