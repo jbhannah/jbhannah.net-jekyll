@@ -3,6 +3,11 @@ task :start do
   sh %{ foreman start }
 end
 
+task :generate do
+  system "bundle exec compass compile -c compass.rb"
+  system "bundle exec jekyll"
+end
+
 namespace :new do
   task :post, [:title, :format, :category] do |t, args|
     require 'active_support/inflector'
