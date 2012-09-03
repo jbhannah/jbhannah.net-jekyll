@@ -1,6 +1,6 @@
 desc 'Start Jekyll preview server and Compass watcher'
 task :start do
-  sh %{ foreman start }
+  system "bundle exec foreman start"
 end
 
 task :generate do
@@ -19,7 +19,7 @@ namespace :new do
     if File.exists?(filename)
       raise "A post with that date, title, and format already exists!"
     else
-      sh %{ touch #{filename} }
+      system "touch #{filename}"
 
       front = []
       front << "---"
@@ -33,7 +33,7 @@ namespace :new do
       f << front.join("\n")
       f.close
 
-      sh %{ vi -c start + #{filename} }
+      system "vi -c start + #{filename}"
     end
   end
 end
