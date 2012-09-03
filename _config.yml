@@ -2,7 +2,7 @@ auto: false
 url:  http://jbhannah.net/
 permalink: /blog/:year/:month/:day/:title.html
 
-exclude: [.rvmrc, CNAME, compass.rb, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, sass]
+exclude: [compass.rb, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, sass]
 
 name:     Jesse B. Hannah
 nickname: jbhannah
