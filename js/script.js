@@ -1,6 +1,6 @@
 $(function() {
   $('a[href^=http]').each(function() {
-    if (this.href.indexOf(location.hostname) == -1) {
+    if (this.href.indexOf("http://" + location.hostname) == -1) {
       var rel = $(this).attr('rel');
       if (rel != undefined) {
         rel += ' ';
