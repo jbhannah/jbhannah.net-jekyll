@@ -4,5 +4,5 @@ gem "rake"
 gem "activesupport"
 
 gem "jekyll"
-gem "compass", '~> 0.12'
+gem "compass"
 gem "foreman"
