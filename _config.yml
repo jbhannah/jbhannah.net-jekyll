@@ -1,4 +1,4 @@
-auto: true
+auto: false
 url:  http://jbhannah.net/
 permalink: /blog/:year/:month/:day/:title.html
 
