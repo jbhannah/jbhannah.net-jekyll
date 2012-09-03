@@ -15,7 +15,7 @@ $blueprint-font-size: 16px;
 $footer-height: 3em;
 
 @import "compass/layout/sticky-footer";
-@include sticky-footer;
+@include sticky-footer($footer-height);
 
 body {
   background: $blueprint-background-color;
