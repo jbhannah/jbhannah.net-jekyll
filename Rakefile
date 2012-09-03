@@ -1,6 +1,6 @@
 desc 'Start Jekyll preview server and Compass watcher'
 task :start do
-  system "bundle exec foreman start"
+  system "bundle exec foreman start -c compass=1,jekyll=1"
 end
 
 namespace :assets do
