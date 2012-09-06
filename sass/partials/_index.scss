@@ -23,6 +23,14 @@ body.index, body.err404 {
 
       section#content {
         @include column(16, true);
+
+        section#twitter {
+          @include column(8);
+
+          iframe#twitter-widget-0 {
+            @include column(8, true);
+          }
+        }
       }
     }
 
