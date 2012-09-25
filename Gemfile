@@ -8,6 +8,9 @@ gem "RedCloth"
 gem "compass"
 gem "kramdown"
 
-gem "foreman"
 gem "rack-contrib"
 gem "unicorn"
+
+group :development do
+  gem "foreman"
+end
