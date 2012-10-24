@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>{{ site.name }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
     <link href="/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
@@ -28,6 +28,7 @@
         </header>
 
         <section id="content">
+          {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
           {{ content }}
         </section>
 
