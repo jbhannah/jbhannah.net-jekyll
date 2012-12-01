@@ -12,8 +12,9 @@ Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 [![Adarothunn][Adarothunn]](http://us.battle.net/wow/en/character/Earthen Ring/Adarothunn/)
 [![Adarkzarnlek][Adarkzarnlek]](http://us.battle.net/wow/en/character/Earthen Ring/Adarkzarnlek/)
 [![Adarrigh][Adarrigh]](http://us.battle.net/wow/en/character/Earthen Ring/Adarrigh/)
-[![Adarushiang][Adarushiang]](http://us.battle.net/wow/en/character/Earthen Ring/Adarushiang/)
 [![Adarysong][Adarysong-ER]](http://us.battle.net/wow/en/character/Earthen Ring/Adarysong/)
+[![Adarugarak][Adarugarak]](http://us.battle.net/wow/en/character/Earthen Ring/Adarugarak/)
+[![Adarushiang][Adarushiang]](http://us.battle.net/wow/en/character/Earthen Ring/Adarushiang/)
 
 Emerald Dream-US (RP-PVP)<br />
 [![Vqshorkhas][Vqshorkhas]](http://us.battle.net/wow/en/character/Emerald Dream/Vqshorkhas/)
@@ -31,6 +32,7 @@ Ravenholdt-US (RP-PVP)<br />
 [Adarkzarnlek]: http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarkzarnlek.png
 [Adarothunn]:   http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarothunn.png
 [Adarrigh]:     http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarrigh.png
+[Adarugarak]:   http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarugarak.png
 [Adarungol]:    http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarungol.png
 [Adarushiang]:  http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarushiang.png
 [Adarysong-ER]: http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarysong.png
