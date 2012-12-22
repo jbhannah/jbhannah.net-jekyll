@@ -21,6 +21,7 @@ Emerald Dream-US (RP-PVP)<br />
 [![Vqshorkhas][Vqshorkhas]](http://us.battle.net/wow/en/character/Emerald Dream/Vqshorkhas/)
 [![Freena][Freena]](http://us.battle.net/wow/en/character/Emerald Dream/Freena/)
 [![Kaelivia][Kaelivia]](http://us.battle.net/wow/en/character/Emerald Dream/Kaelivia/)
+[![Sophylaha][Sophylaha]](http://us.battle.net/wow/en/character/Emerald Dream/Sophylaha/)
 
 Ravenholdt-US (RP-PVP)<br />
 [![Adarysong][Adarysong-RH]](http://us.battle.net/wow/en/character/Ravenholdt/Adarysong/)
@@ -42,4 +43,5 @@ Ravenholdt-US (RP-PVP)<br />
 [Freena]:       http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Freena.png
 [Jinney]:       http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Jinney.png
 [Kaelivia]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Kaelivia.png
+[Sophylaha]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Sophylaha.png
 [Vqshorkhas]:   http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Vqshorkhas.png
