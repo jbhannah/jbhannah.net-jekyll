@@ -5,8 +5,8 @@ title: World of Warcraft roster
 
 Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 [![Adarystus][Adarystus]](http://twitter.com/Adarystus)
-[![Adarungol][Adarungol]](http://us.battle.net/wow/en/character/Earthen Ring/Adarungol/)
 [![Adareina][Adareina]](http://us.battle.net/wow/en/character/Earthen Ring/Adareina/)
+[![Adarungol][Adarungol]](http://us.battle.net/wow/en/character/Earthen Ring/Adarungol/)
 [![Adarelysta][Adarelysta]](http://us.battle.net/wow/en/character/Earthen Ring/Adarelysta/)
 [![Adarenlink][Adarenlink]](http://us.battle.net/wow/en/character/Earthen Ring/Adarenlink/)
 [![Adarothunn][Adarothunn]](http://us.battle.net/wow/en/character/Earthen Ring/Adarothunn/)
