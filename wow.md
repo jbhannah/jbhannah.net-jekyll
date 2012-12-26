@@ -11,8 +11,8 @@ Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 [![Adarenlink][Adarenlink]](http://us.battle.net/wow/en/character/Earthen Ring/Adarenlink/)
 [![Adarothunn][Adarothunn]](http://us.battle.net/wow/en/character/Earthen Ring/Adarothunn/)
 [![Adarkzarnlek][Adarkzarnlek]](http://us.battle.net/wow/en/character/Earthen Ring/Adarkzarnlek/)
-[![Adarrigh][Adarrigh]](http://us.battle.net/wow/en/character/Earthen Ring/Adarrigh/)
 [![Adarysong][Adarysong-ER]](http://us.battle.net/wow/en/character/Earthen Ring/Adarysong/)
+[![Adarrigh][Adarrigh]](http://us.battle.net/wow/en/character/Earthen Ring/Adarrigh/)
 [![Adarugarak][Adarugarak]](http://us.battle.net/wow/en/character/Earthen Ring/Adarugarak/)
 [![Adarushiang][Adarushiang]](http://us.battle.net/wow/en/character/Earthen Ring/Adarushiang/)
 
