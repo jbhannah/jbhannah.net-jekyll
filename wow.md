@@ -22,6 +22,7 @@ Emerald Dream-US (RP-PVP)<br />
 [![Freena][Freena]](http://us.battle.net/wow/en/character/Emerald Dream/Freena/)
 [![Kaelivia][Kaelivia]](http://us.battle.net/wow/en/character/Emerald Dream/Kaelivia/)
 [![Sophylaha][Sophylaha]](http://us.battle.net/wow/en/character/Emerald Dream/Sophylaha/)
+[![Zhiliao][Zhiliao]](http://us.battle.net/wow/en/character/Emerald Dream/Zhiliao/)
 [![Zivaliah][Zivaliah]](http://us.battle.net/wow/en/character/Emerald Dream/Zivaliah/)
 
 Ravenholdt-US (RP-PVP)<br />
@@ -44,6 +45,7 @@ Ravenholdt-US (RP-PVP)<br />
 [Freena]:       http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Freena.png
 [Jinney]:       http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Jinney.png
 [Kaelivia]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Kaelivia.png
-[Sophylaha]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Sophylaha.png
+[Sophylaha]:    http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Sophylaha.png
 [Vqshorkhas]:   http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Vqshorkhas.png
+[Zhiliao]:      http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Zhiliao.png
 [Zivaliah]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Zivaliah.png
