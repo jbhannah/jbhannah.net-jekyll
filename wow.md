@@ -21,8 +21,8 @@ Emerald Dream-US (RP-PVP)<br />
 [![Vqshorkhas][Vqshorkhas]](http://us.battle.net/wow/en/character/Emerald Dream/Vqshorkhas/)
 [![Freena][Freena]](http://us.battle.net/wow/en/character/Emerald Dream/Freena/)
 [![Kaelivia][Kaelivia]](http://us.battle.net/wow/en/character/Emerald Dream/Kaelivia/)
-[![Sophylaha][Sophylaha]](http://us.battle.net/wow/en/character/Emerald Dream/Sophylaha/)
 [![Zhiliao][Zhiliao]](http://us.battle.net/wow/en/character/Emerald Dream/Zhiliao/)
+[![Sophylaha][Sophylaha]](http://us.battle.net/wow/en/character/Emerald Dream/Sophylaha/)
 [![Zivaliah][Zivaliah]](http://us.battle.net/wow/en/character/Emerald Dream/Zivaliah/)
 
 Ravenholdt-US (RP-PVP)<br />
