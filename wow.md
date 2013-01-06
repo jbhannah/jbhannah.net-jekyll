@@ -13,8 +13,8 @@ Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 [![Adarothunn][Adarothunn]](http://us.battle.net/wow/en/character/Earthen Ring/Adarothunn/)
 [![Adarkzarnlek][Adarkzarnlek]](http://us.battle.net/wow/en/character/Earthen Ring/Adarkzarnlek/)
 [![Adarrigh][Adarrigh]](http://us.battle.net/wow/en/character/Earthen Ring/Adarrigh/)
-[![Adarugarak][Adarugarak]](http://us.battle.net/wow/en/character/Earthen Ring/Adarugarak/)
 [![Adarushiang][Adarushiang]](http://us.battle.net/wow/en/character/Earthen Ring/Adarushiang/)
+[![Adarugarak][Adarugarak]](http://us.battle.net/wow/en/character/Earthen Ring/Adarugarak/)
 
 Emerald Dream-US (RP-PVP)<br />
 [![Jinney][Jinney]](http://us.battle.net/wow/en/character/Emerald Dream/Jinney/)
@@ -22,6 +22,7 @@ Emerald Dream-US (RP-PVP)<br />
 [![Freena][Freena]](http://us.battle.net/wow/en/character/Emerald Dream/Freena/)
 [![Kaelivia][Kaelivia]](http://us.battle.net/wow/en/character/Emerald Dream/Kaelivia/)
 [![Sophylaha][Sophylaha]](http://us.battle.net/wow/en/character/Emerald Dream/Sophylaha/)
+[![Zivaliah][Zivaliah]](http://us.battle.net/wow/en/character/Emerald Dream/Zivaliah/)
 
 Ravenholdt-US (RP-PVP)<br />
 [![Adarysong][Adarysong-RH]](http://us.battle.net/wow/en/character/Ravenholdt/Adarysong/)
@@ -45,3 +46,4 @@ Ravenholdt-US (RP-PVP)<br />
 [Kaelivia]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Kaelivia.png
 [Sophylaha]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Sophylaha.png
 [Vqshorkhas]:   http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Vqshorkhas.png
+[Zivaliah]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Zivaliah.png
