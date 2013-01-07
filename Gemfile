@@ -3,7 +3,7 @@ source :rubygems
 gem "rake"
 gem "activesupport"
 
-gem "jekyll"
+gem "jekyll", "~> 0.12.0"
 gem "RedCloth"
 gem "compass"
 gem "kramdown"
