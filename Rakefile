@@ -13,7 +13,8 @@ namespace :assets do
 end
 
 namespace :new do
-  task :post, [:title, :format, :category] do |t, args|
+  desc 'Create a new post'
+  task :post, [:title, :format] do |t, args|
     require 'active_support/inflector'
     args.with_defaults(format: 'md')
 
