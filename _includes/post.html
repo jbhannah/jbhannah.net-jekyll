@@ -1,0 +1,13 @@
+<article>
+  <header class="post_header">
+    <h1 class="post_title">{% if post %}<a href="{{ post.url }}">{{ post.title }}</a>{% else %}{{ page.title }}{% endif %}</h1>
+    <small class="post_meta">
+      <time pubdate>{% if post %}{{ post.date | date_to_string }}{% else %}{{ page.date | date_to_string }}{% endif %}</time>
+      by {{ site.name }}
+    </small>
+  </header>
+
+  <section class="post_body">
+    {% if post %}{{ post.content }}{% else %}{{ content }}{% endif %}
+  </section>
+</article>
