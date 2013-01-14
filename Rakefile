@@ -1,14 +1,13 @@
-desc 'Start Jekyll preview server and Compass watcher'
-task :start do
-  system "bundle exec compass compile -c compass.rb"
-  system "bundle exec foreman start -c compass=1,jekyll=1"
-end
-
 namespace :assets do
+  desc 'Compile Compass stylesheets'
+  task :compass do
+    sh "bundle exec compass compile -c compass.rb"
+  end
+
   desc 'Precompile assets'
   task :precompile do
-    system "bundle exec compass compile -c compass.rb"
-    system "bundle exec jekyll"
+    Rake::Task['assets:compass'].invoke
+    sh "bundle exec jekyll"
   end
 end
 
@@ -24,7 +23,7 @@ namespace :new do
     if File.exists?(filename)
       raise "A post with that date, title, and format already exists!"
     else
-      system "touch #{filename}"
+      sh "touch #{filename}"
 
       front = []
       front << "---"
@@ -38,7 +37,13 @@ namespace :new do
       f << front.join("\n")
       f.close
 
-      system "vi -c start + #{filename}"
+      sh "vi -c start + #{filename}"
     end
   end
+end
+
+desc 'Start Jekyll preview server and Compass watcher'
+task :start do
+  Rake::Task['assets:compass'].invoke
+  exec "bundle exec foreman start -c compass=1,jekyll=1"
 end
