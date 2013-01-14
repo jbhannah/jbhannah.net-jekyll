@@ -3,6 +3,8 @@ layout: default
 title: World of Warcraft roster
 ---
 
+# {{ page.title }}
+
 Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 [![Adarystus][Adarystus]](http://twitter.com/Adarystus)
 [![Adareina][Adareina]](http://us.battle.net/wow/en/character/Earthen Ring/Adareina/)
