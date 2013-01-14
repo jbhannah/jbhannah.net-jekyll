@@ -3,7 +3,7 @@
 
   <nav id="social_menu">
     <ul>
-      {% for s in site.social %}<li id="{{ s.abbr }}"><a href="{{ s.url }}"><img src="/img/social/{{ s.abbr }}.png" class="social_icon" alt="{{ s.name }}" title="{{ s.name }}" /></a></li>{% endfor %}
+      {% for s in site.social %}<li id="{{ s.abbr }}"><a href="{{ s.url }}{% if s.abbr == 'gplus' and page.date %}?rel=author{% endif %}"><img src="/img/social/{{ s.abbr }}.png" class="social_icon" alt="{{ s.name }}" title="{{ s.name }}" /></a></li>{% endfor %}
     </ul>
   </nav>
 
