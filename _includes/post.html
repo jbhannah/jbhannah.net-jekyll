@@ -6,7 +6,6 @@
       <time datetime="{% if post %}{{ post.date | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}"{% unless post %} pubdate{% endunless %}>
         {% if post %}{{ post.date | date_to_long_string }}{% else %}{{ page.date | date_to_long_string }}{% endif %}
       </time>
-      by {{ site.name }}
     </div>
   </header>
 
