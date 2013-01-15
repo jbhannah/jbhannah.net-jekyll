@@ -1,4 +1,4 @@
-@import "compass/utilities/lists/horizontal-list";
+@import "compass/typography/lists/horizontal-list";
 
 article.post {
   .post_header {
@@ -22,6 +22,10 @@ article.post {
 
   .previous, .pages, .next {
     float: left;
+
+    &.disabled {
+      color: grey;
+    }
   }
 
   ul.pages {
@@ -29,6 +33,10 @@ article.post {
 
     li.page {
       margin: auto 1em;
+
+      .current_page {
+        font-weight: bold;
+      }
     }
   }
 }

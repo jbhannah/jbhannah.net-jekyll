@@ -11,14 +11,14 @@ title: Blog
   {% if paginator.previous_page %}
   <div class="previous">
     {% if paginator.previous_page == 1 %}
-    <a href="/blog">Previous</a>
+    <a href="/blog">&laquo; Previous</a>
     {% else %}
-    <a href="/blog/page{{paginator.previous_page}}">Previous</a>
+    <a href="/blog/page{{paginator.previous_page}}">&laquo; Previous</a>
     {% endif %}
   </div>
   {% else %}
   <div class="previous disabled">
-    <span>Previous</span>
+    <span>&laquo; Previous</span>
   </div>
   {% endif %}
 
@@ -44,11 +44,11 @@ title: Blog
 
   {% if paginator.next_page %}
   <div class="next">
-    <a href="/blog/page{{paginator.next_page}}">Next</a>
+    <a href="/blog/page{{paginator.next_page}}">Next &raquo;</a>
   </div>
   {% else %}
   <div class="next disabled">
-    <span>Next</span>
+    <span>Next &raquo;</span>
   </div>
   {% endif %}
 </div>
