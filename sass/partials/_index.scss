@@ -31,6 +31,10 @@ body.index, body.err404 {
             @include column(8, true);
           }
         }
+
+        section#latest_posts {
+          @include column(8, true);
+        }
       }
     }
 
