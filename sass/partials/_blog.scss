@@ -1,0 +1,34 @@
+@import "compass/utilities/lists/horizontal-list";
+
+article.post {
+  .post_header {
+    .post_title {
+      margin-bottom: 0;
+    }
+
+    .post_meta {
+      font-size: small;
+    }
+
+    margin-bottom: 1em;
+  }
+}
+
+.pagination {
+  margin: 1em auto 0;
+  clear: both;
+
+  font-size: small;
+
+  .previous, .pages, .next {
+    float: left;
+  }
+
+  ul.pages {
+    @include horizontal-list;
+
+    li.page {
+      margin: auto 1em;
+    }
+  }
+}

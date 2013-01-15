@@ -7,14 +7,51 @@ title: Blog
   {% include post.html %}
 {% endfor %}
 
-{% if paginator.total_pages > 1 %}
-  {% if paginator.page > 1 %}
-    <a href="/blog/page{{ paginator.previous_page }}">&laquo; Page {{ paginator.previous_page }}</a>
+<div id="post_pagination" class="pagination">
+  {% if paginator.previous_page %}
+  <div class="previous">
+    {% if paginator.previous_page == 1 %}
+    <a href="/blog">Previous</a>
+    {% else %}
+    <a href="/blog/page{{paginator.previous_page}}">Previous</a>
+    {% endif %}
+  </div>
+  {% else %}
+  <div class="previous disabled">
+    <span>Previous</span>
+  </div>
   {% endif %}
-  {% if paginator.page < paginator.total_pages %}
-    <a href="/blog/page{{ paginator.next_page }}">Page {{ paginator.next_page }} &raquo;</a>
+
+  <ul class="pages">
+    <li class="page">
+      {% if paginator.page == 1 %}
+      <span class="current_page">1</span>
+      {% else %}
+      <a href="/blog">1</a>
+      {% endif %}
+    </li>
+
+    {% for count in (2..paginator.total_pages) %}
+    <li class="page">
+      {% if count == paginator.page %}
+      <span class="current_page">{{count}}</span>
+      {% else %}
+      <a href="/blog/page{{count}}">{{count}}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.next_page %}
+  <div class="next">
+    <a href="/blog/page{{paginator.next_page}}">Next</a>
+  </div>
+  {% else %}
+  <div class="next disabled">
+    <span>Next</span>
+  </div>
   {% endif %}
-{% endif %}
+</div>
 
 <script type="text/javascript">
     (function () {
