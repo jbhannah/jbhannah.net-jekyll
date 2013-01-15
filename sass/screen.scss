@@ -58,12 +58,14 @@ body {
         @include column(5);
       }
 
-      nav#social_menu {
+      .sidebar_block {
         @include column(5);
 
         clear: both;
         padding-top: 4px;
+      }
 
+      nav#social_menu {
         ul {
           @include horizontal-list(3px);
 

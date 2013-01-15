@@ -24,7 +24,7 @@ body.index, body.err404 {
       section#content {
         @include column(16, true);
 
-        section#twitter {
+        section#twitter_feed {
           @include column(8);
 
           iframe#twitter-widget-0 {
