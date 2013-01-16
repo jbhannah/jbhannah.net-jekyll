@@ -5,7 +5,7 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 paginate: 10
 
-exclude: [compass.rb, config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, sass, unicorn.rb, vendor]
+exclude: [compass.rb, config.ru, Gemfile, Gemfile.lock, LICENSE.txt, Procfile, Rakefile, README.md, sass, unicorn.rb, vendor]
 
 name:     Jesse B. Hannah
 nickname: jbhannah
