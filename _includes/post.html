@@ -9,6 +9,8 @@
       {% if post %}
       –
       <a href="{{ post.url }}#disqus_thread">Comments</a>
+      {% else %}
+      with tags {{ page.tags | array_to_sentence_string }}
       {% endif %}
     </div>
   </header>
