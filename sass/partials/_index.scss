@@ -22,6 +22,7 @@ body.index, body.err404 {
       }
 
       section#content {
+        @include blueprint-typography-body(16px);
         @include column(16, true);
 
         section#twitter_feed {

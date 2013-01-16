@@ -44,15 +44,15 @@ body {
       }
 
       section#content {
+        @include blueprint-typography-body(14px);
         @include column(18, true);
       }
     }
 
     aside#sidebar {
+      @include blueprint-typography-body(12px);
       @include column(5);
       @include pull(24, true);
-
-      font-size: 80%;
 
       img#avatar {
         @include column(5);
