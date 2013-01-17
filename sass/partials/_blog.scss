@@ -1,6 +1,9 @@
 @import "compass/typography/lists/horizontal-list";
 
 article.post {
+  margin-bottom: 1em;
+  border-bottom: 1px solid silver;
+
   .post_header {
     .post_title {
       line-height: 1.2;
