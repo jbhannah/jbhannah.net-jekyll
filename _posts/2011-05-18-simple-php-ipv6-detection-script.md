@@ -29,7 +29,7 @@ something like this:
 A `<span id="remote_ip" />` or `<div id="remote_ip" />` (remember the 
 closing `/`, or closing tag to stay HTML5-valid) would be replaced with
 
-     Connected via IPv6 from 2000:4000:aaa:22bb::dead:b33f
+    Connected via IPv6 from 2000:4000:aaa:22bb::dead:b33f
 
 so that a visitor can see what protocol and address they're connected 
 with. You can also use the script to track how many visitors to your 
