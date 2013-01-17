@@ -10,18 +10,20 @@ article.post {
       margin-bottom: 0;
     }
 
-    .post_meta, .post_social {
+    .post_meta, .social_share {
       margin-top: 0.5em;
       font-size: small;
     }
 
-    .post_social {
-      .twitter-share-button {
-        vertical-align: top;
-      }
-    }
-
     margin-bottom: 1em;
+  }
+}
+
+.social_share {
+  margin-bottom: 1em;
+
+  div, iframe {
+    vertical-align: middle !important;
   }
 }
 
