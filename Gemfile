@@ -9,6 +9,7 @@ gem "compass"
 gem "kramdown"
 
 gem "rack-contrib"
+gem "rack-rewrite"
 gem "unicorn"
 
 group :development do
