@@ -1,4 +1,6 @@
 <div class="post_social">
   <div class="fb-like" data-href="{{ site.url }}{% if post %}{{ post.url | remove_first:'/' }}{% else %}{{ page.url | remove_first:'/' }}{% endif %}"
     data-send="false" data-layout="button_count" data-show-faces="false" data-action="recommend"></div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="jbhannah" data-lang="en"
+    data-url="{{ site.url }}{% if post %}{{ post.url | remove_first:'/' }}{% else %}{{ page.url | remove_first:'/' }}{% endif %}">Tweet</a>
 </div>
