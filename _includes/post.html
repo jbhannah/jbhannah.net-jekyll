@@ -16,6 +16,11 @@
   </header>
 
   <section class="post_body">
-    {% if post %}{{ post.content }}{% else %}{{ content }}{% endif %}
+  {% if post %}
+    {{ post.content | excerpt }}
+    {% if post.content | has_excerpt %}<p><a href="{{ post.url }}">Read more…</a></p>{% endif %}
+  {% else %}
+    {{ content }}
+  {% endif %}
   </section>
 </article>
