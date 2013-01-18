@@ -40,7 +40,7 @@ module Jekyll
     end
 
     def render(context)
-        @api_key = ENV['FLICKR_API_KEY']
+        @api_key = context.registers[:site].config["flickr"]["api_key"]
         @photo.merge!(@@cached[photo_key] || get_photo)
 
         selected_size = @photo[:sizes][@photo[:size]]
