@@ -85,7 +85,6 @@ module Jekyll
         hydra.run
 
         @@cached[photo_key] = @photo
-        return @photo
     end
 
     def photo_key
