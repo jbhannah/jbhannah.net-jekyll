@@ -17,12 +17,12 @@
     {% include social.html %}
   </header>
 
-  <section class="post_body">
-  {% if post %}
-    {{ post.content | excerpt }}
-    {% if post.content | has_excerpt %}<p><a href="{{ post.url }}">Read more…</a></p>{% endif %}
-  {% else %}
-    {{ content }}
-  {% endif %}
+  <section class="post_content">
+{% if post %}
+{{ post.content | excerpt }}
+{% else %}
+{{ content }}
+{% endif %}
   </section>
+  {% if post.content | has_excerpt %}<footer><p><a href="{{ post.url }}">Read more…</a></p></footer>{% endif %}
 </article>

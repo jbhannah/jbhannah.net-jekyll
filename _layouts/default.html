@@ -6,6 +6,7 @@
 
     <meta name="author" content="{{ site.name }}" />
     <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+    <meta name="description" content="{{ content | raw_content | excerpt | strip_html | strip_newlines | truncate: 250 }}" />
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ' ' }}" />{% endif %}
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />

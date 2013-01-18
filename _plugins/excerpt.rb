@@ -1,19 +1,33 @@
-# Jekyll post excerpt filter
-# Based on:
-#   - http://metaclaws.com/2012/03/03/jekyll_post_excerpts_plugin_and_also_without_a_plugin_for_use_on_github_pages/
-#   - https://github.com/imathis/octopress/blob/master/plugins/octopress_filters.rb
+# Jekyll post excerpt and related filters, extracted from Octopress
+# 
+# Originally written by Brandon Mathis
+# https://github.com/imathis/octopress/blob/master/plugins/octopress_filters.rb
+
 module Jekyll
   module ExcerptFilter
     def excerpt(input)
-      if input.index(/<!-- more -->/i)
-        input.split(/<!-- more -->/i)[0]
+      if input.index(/<!--\s*more\s*-->/i)
+        input.split(/<!--\s*more\s*-->/i)[0]
       else
         input
       end
     end
 
     def has_excerpt(input)
-      input =~ /<!-- more -->/i ? true : false
+      input =~ /<!--\s*more\s*-->/i ? true : false
+    end
+
+    def raw_content(input)
+      /<section class="post_content">(?<content>[\s\S]*?)<\/section>\s*<(footer|\/article)>/ =~ input
+      return (content.nil?) ? input : content
+    end
+
+    def truncate(input, length)
+      if input.length > length && input[0..(length-1)] =~ /(.+)\b.+$/im
+        $1.strip + '&hellip;'
+      else
+        input
+      end
     end
   end
 end
