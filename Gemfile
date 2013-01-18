@@ -7,6 +7,8 @@ gem "jekyll", "~> 0.12.0"
 gem "RedCloth"
 gem "compass"
 gem "kramdown"
+gem "nokogiri"
+gem "typhoeus"
 
 gem "rack-contrib"
 gem "rack-rewrite"
