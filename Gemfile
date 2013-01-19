@@ -9,6 +9,7 @@ gem "compass"
 gem "kramdown"
 gem "nokogiri"
 gem "typhoeus"
+gem "pygmentize"
 
 gem "rack-contrib"
 gem "rack-rewrite"
