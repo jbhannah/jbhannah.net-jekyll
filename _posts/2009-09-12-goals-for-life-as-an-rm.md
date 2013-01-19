@@ -11,7 +11,7 @@ tags:
  * Decide on a field to study for my PhD.
  * Work from home.
  * Create a webmanga of stories from my mission.
- * Create a(nother) Pokémon site with Aaron and Jill.
+ * Create a(nother) Pokémon site with Aaron.
  * Learn to DJ and produce electronic music.
  * Learn to play guitar, drums, and piano, and get better at the violin and viola.
  * Sing in a choir.

@@ -24,6 +24,8 @@ like I failed in any way. I gave my fullest effort and intent to trying
 to stay out as long as I could, and hopefully managed to have a
 positive effect on the people I interacted with while I was there.
 
+<!-- more -->
+
 To answer the next question: no, I do not intend on trying to return to
 the mission field once this is resolved. It would take a considerable
 amount of time before I would even be to the point where I could go

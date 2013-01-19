@@ -18,6 +18,8 @@ fix. [This fix][] worked perfectly for me, so I’m linking to and
 restating it here (again, this is for 2006 Mac Pros with model
 designation "1,1"):
 
+<!-- more -->
+
  1. Shut down the computer, unplug everything from it, take it into a
     room without a carpeted floor, and open the case. (Follow your
     standard static prevention protocols throughout.)
