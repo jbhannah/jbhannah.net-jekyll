@@ -25,6 +25,10 @@ body.index, body.err404 {
         @include blueprint-typography-body(16px);
         @include column(16, true);
 
+        section.sidebar_block {
+          @include blueprint-typography-body(14px);
+        }
+
         section#twitter_feed {
           @include column(8);
 
