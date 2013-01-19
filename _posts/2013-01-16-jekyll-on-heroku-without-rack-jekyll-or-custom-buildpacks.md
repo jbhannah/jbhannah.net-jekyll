@@ -34,7 +34,7 @@ compiling Jekyll pages, but also allows the use of Compass,
 CoffeeScript, or any other such precompiler we want[^precompilers]. For
 example, to compile Jekyll files and Compass stylesheets[^compass]:
 
-{% gist 4551206 Rakefile %}
+{% gist 4551206 Rakefile %} 
 
 ## Serving from Rack
 
