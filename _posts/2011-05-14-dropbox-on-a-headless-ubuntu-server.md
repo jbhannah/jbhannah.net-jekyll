@@ -20,7 +20,7 @@ old Compaq fell mostly into disuse until I decided to bring it up here;
 and after sitting in my living room running basically nothing but
 [BOINC][boinc], I've finally begun putting it to good active use.
 
-Now, it's running [Ubuntu Server][ubsrv] 11.04, connected only to my
+Now, it's running [Ubuntu Server][ubsrv] 11.04, connected only to my
 home network (without a monitor, or "headless"), and acting as a
 [Transmission][xmsn] client, local [Apache HTTP][httpd] and
 [MySQL][mysql] server, [AFP][afp] [file server][afp2] (via
