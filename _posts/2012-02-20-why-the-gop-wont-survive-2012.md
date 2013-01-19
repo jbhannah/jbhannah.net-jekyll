@@ -128,4 +128,4 @@ political opposition and discourse for Christmas this year? (Assuming
 the world doesn't end for the rest of us—Mayans and Republicans
 aside—before then.)
 
-[nyt]: http://elections.nytimes.com/2012/campaign-finance
+[nyt]: http://web.archive.org/web/20120216222740/http://elections.nytimes.com/2012/campaign-finance
