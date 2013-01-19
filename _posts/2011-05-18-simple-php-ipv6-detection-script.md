@@ -27,15 +27,15 @@ something like this:
 
 {% gist 986186 v6_ajax.js %}
 
-A `<span id="remote_ip" />` or `<div id="remote_ip" />` (remember the 
+A `<span id="remote_ip" />` or `<div id="remote_ip" />` (remember the
 closing `/`, or closing tag to stay HTML5-valid) would be replaced with
 
     Connected via IPv6 from 2000:4000:aaa:22bb::dead:b33f
 
-so that a visitor can see what protocol and address they're connected 
-with. You can also use the script to track how many visitors to your 
-site use IPv6. It may be trivial, but it's just something I threw 
-together on a whim because I felt like it and thought it'd be a fun 
+so that a visitor can see what protocol and address they're connected
+with. You can also use the script to track how many visitors to your
+site use IPv6. It may be trivial, but it's just something I threw
+together on a whim because I felt like it and thought it'd be a fun
 exercise in regular expressions, JSON, and jQuery.
 
 [PHP]: http://php.net/

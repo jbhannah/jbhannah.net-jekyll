@@ -3,7 +3,7 @@ layout: post
 title: Dropbox on a Headless Ubuntu Server
 published: true
 tags:
-- Linux
+  - Linux
 ---
 
 The first computer of my own that I've had was a Compaq desktop that,
@@ -20,28 +20,27 @@ old Compaq fell mostly into disuse until I decided to bring it up here;
 and after sitting in my living room running basically nothing but
 [BOINC][boinc], I've finally begun putting it to good active use.
 
-Now, it's running [Ubuntu Server][ubsrv] 11.04, connected only to my
+Now, it's running [Ubuntu Server][ubsrv] 11.04, connected only to my
 home network (without a monitor, or "headless"), and acting as a
 [Transmission][xmsn] client, local [Apache HTTP][httpd] and
 [MySQL][mysql] server, [AFP][afp] [file server][afp2] (via
-[Netatalk][natlk]), and IPv6 gateway with a
-[Hurricane Electric IPv6 tunnel][he] and [radvd][radvd]. Most of that
-is pretty straightforward; instructions on setting up AFP are in the
-middle of that wall of links, and an IPv6/radvd how-to is forthcoming,
-but I also have it connected to my Dropbox account with the idea of
-having it be a host for backups of itself and my web server and
-automatically managing and uploading the backups. I don't quite have
-the backup system figured out yet (when I do I'll put together a
-writeup on that, too), but I have got Dropbox up and running smoothly.
-Most of this is based on instructions from the Dropbox wiki, both for a
-[generic Linux text-based installation][db-gi] and
-[for Ubuntu Server][db-us], but with a few refinements. I've put
-together a [script][setup] (which should be run as `root` or with
-`sudo`) that goes through the whole process, which is pretty
-straightforward but I'll go over the steps here. (They're written for
-and have only been tested on Ubuntu Server, but will probably work on
-most other distributions; the only thing that might need to be changed
-is the startup script.)
+[Netatalk][natlk]), and IPv6 gateway with a [Hurricane Electric IPv6
+tunnel][he] and [radvd][radvd]. Most of that is pretty straightforward;
+instructions on setting up AFP are in the middle of that wall of links,
+and an IPv6/radvd how-to is forthcoming, but I also have it connected
+to my Dropbox account with the idea of having it be a host for backups
+of itself and my web server and automatically managing and uploading
+the backups. I don't quite have the backup system figured out yet (when
+I do I'll put together a writeup on that, too), but I have got Dropbox
+up and running smoothly.  Most of this is based on instructions from
+the Dropbox wiki, both for a [generic Linux text-based
+installation][db-gi] and [for Ubuntu Server][db-us], but with a few
+refinements. I've put together a [script][setup] (which should be run
+as `root` or with `sudo`) that goes through the whole process, which is
+pretty straightforward but I'll go over the steps here. (They're
+written for and have only been tested on Ubuntu Server, but will
+probably work on most other distributions; the only thing that might
+need to be changed is the startup script.)
 
 <!--more-->
 
@@ -146,31 +145,31 @@ folder!); if you use a symlink, you can then make that location
 readable or writable to any user, or to the `dropbox` group and then
 add users to that group to give them access.
 
-Again, I've put together a
-[script that runs though the basic process][setup]; feel free to use
-and modify that, or go through this process step by step making
-whatever adjustments will work best for your own setup. Post your
-findings and any questions you may have in the comments.
+Again, I've put together a [script that runs though the basic
+process][setup]; feel free to use and modify that, or go through this
+process step by step making whatever adjustments will work best for
+your own setup. Post your findings and any questions you may have in
+the comments.
 
 [^MiB]: Yes, I insist on using binary prefixes. "Mega" as in
     "[megabyte][mb]" (MB) is $$ 10^{6} $$; "mebi" as in
     "[mebibyte][mib]" (MiB) is $$ 2^{20} $$.
 
-[fdra]:  http://fedoraproject.org/ "Fedora Project Homepage"
-[php]:   http://php.net/ "PHP: Hypertext Preprocessor"
-[boinc]: http://boinc.berkeley.edu/ "BOINC"
-[ubsrv]: http://www.ubuntu.com/business/server/overview "Server | Ubuntu"
-[xmsn]:  http://www.transmissionbt.com/ "Transmission"
-[httpd]: http://httpd.apache.org/ "Welcome! - The Apache HTTP Server Project"
-[mysql]: http://www.mysql.com/ "MySQL :: The world's most popular open source database"
-[afp]:   http://en.wikipedia.org/wiki/Apple_Filing_Protocol "Apple Filing Protocol - Wikipedia, the free encyclopedia"
-[afp2]:  http://missingreadme.wordpress.com/2010/05/08/how-to-set-up-afp-filesharing-on-ubuntu/ "How to set up AFP filesharing on Ubuntu &amp;laquo; The Missing Readme"
-[natlk]: http://netatalk.sourceforge.net/ "Netatalk - Networking Apple Macintosh through Open Source"
-[he]:    http://tunnelbroker.net/ "Hurricane Electric Free IPv6 Tunnel Broker"
-[radvd]: http://www.litech.org/radvd/ "Linux IPv6 Router Advertisement Daemon (radvd)"
-[db-gi]: http://wiki.dropbox.com/TipsAndTricks/TextBasedLinuxInstall "TipsAndTricks/TextBasedLinuxInstall - Dropbox Wiki"
-[db-us]: http://wiki.dropbox.com/TipsAndTricks/UbuntuServerInstall "TipsAndTricks/UbuntuServerInstall - Dropbox Wiki"
-[setup]: https://gist.github.com/986199#file_dropbox_setup.sh "Dropbox setup on a headless Ubuntu Server (http://wp.me/pnbL6-5F) — Gist"
-[upst]:  http://upstart.ubuntu.com/ "upstart - event-based init daemon"
-[mb]:    http://en.wikipedia.org/wiki/Megabyte "Megabyte - Wikipedia, the free encyclopedia"
-[mib]:   http://en.wikipedia.org/wiki/Mebibyte "Mebibyte - Wikipedia, the free encyclopedia"
+[fdra]:  http://fedoraproject.org/
+[php]:   http://php.net/
+[boinc]: http://boinc.berkeley.edu/
+[ubsrv]: http://www.ubuntu.com/business/server/overview
+[xmsn]:  http://www.transmissionbt.com/
+[httpd]: http://httpd.apache.org/
+[mysql]: http://www.mysql.com/
+[afp]:   http://en.wikipedia.org/wiki/Apple_Filing_Protocol
+[afp2]:  http://missingreadme.wordpress.com/2010/05/08/how-to-set-up-afp-filesharing-on-ubuntu/
+[natlk]: http://netatalk.sourceforge.net/
+[he]:    http://tunnelbroker.net/
+[radvd]: http://www.litech.org/radvd/
+[db-gi]: http://wiki.dropbox.com/TipsAndTricks/TextBasedLinuxInstall
+[db-us]: http://wiki.dropbox.com/TipsAndTricks/UbuntuServerInstall
+[setup]: https://gist.github.com/986199#file_dropbox_setup.sh
+[upst]:  http://upstart.ubuntu.com/
+[mb]:    http://en.wikipedia.org/wiki/Megabyte
+[mib]:   http://en.wikipedia.org/wiki/Mebibyte
