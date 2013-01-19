@@ -156,21 +156,21 @@ findings and any questions you may have in the comments.
     "[megabyte][mb]" (MB) is $$ 10^{6} $$; "mebi" as in
     "[mebibyte][mib]" (MiB) is $$ 2^{20} $$.
 
-[fdra]:  http://fedoraproject.org/ "Fedora Project Homepage"
-[php]:   http://php.net/ "PHP: Hypertext Preprocessor"
-[boinc]: http://boinc.berkeley.edu/ "BOINC"
-[ubsrv]: http://www.ubuntu.com/business/server/overview "Server | Ubuntu"
-[xmsn]:  http://www.transmissionbt.com/ "Transmission"
-[httpd]: http://httpd.apache.org/ "Welcome! - The Apache HTTP Server Project"
-[mysql]: http://www.mysql.com/ "MySQL :: The world's most popular open source database"
-[afp]:   http://en.wikipedia.org/wiki/Apple_Filing_Protocol "Apple Filing Protocol - Wikipedia, the free encyclopedia"
-[afp2]:  http://missingreadme.wordpress.com/2010/05/08/how-to-set-up-afp-filesharing-on-ubuntu/ "How to set up AFP filesharing on Ubuntu &amp;laquo; The Missing Readme"
-[natlk]: http://netatalk.sourceforge.net/ "Netatalk - Networking Apple Macintosh through Open Source"
-[he]:    http://tunnelbroker.net/ "Hurricane Electric Free IPv6 Tunnel Broker"
-[radvd]: http://www.litech.org/radvd/ "Linux IPv6 Router Advertisement Daemon (radvd)"
-[db-gi]: http://wiki.dropbox.com/TipsAndTricks/TextBasedLinuxInstall "TipsAndTricks/TextBasedLinuxInstall - Dropbox Wiki"
-[db-us]: http://wiki.dropbox.com/TipsAndTricks/UbuntuServerInstall "TipsAndTricks/UbuntuServerInstall - Dropbox Wiki"
-[setup]: https://gist.github.com/986199#file_dropbox_setup.sh "Dropbox setup on a headless Ubuntu Server (http://wp.me/pnbL6-5F) — Gist"
-[upst]:  http://upstart.ubuntu.com/ "upstart - event-based init daemon"
-[mb]:    http://en.wikipedia.org/wiki/Megabyte "Megabyte - Wikipedia, the free encyclopedia"
-[mib]:   http://en.wikipedia.org/wiki/Mebibyte "Mebibyte - Wikipedia, the free encyclopedia"
+[fdra]:  http://fedoraproject.org/
+[php]:   http://php.net/
+[boinc]: http://boinc.berkeley.edu/
+[ubsrv]: http://www.ubuntu.com/business/server/overview
+[xmsn]:  http://www.transmissionbt.com/
+[httpd]: http://httpd.apache.org/
+[mysql]: http://www.mysql.com/
+[afp]:   http://en.wikipedia.org/wiki/Apple_Filing_Protocol
+[afp2]:  http://missingreadme.wordpress.com/2010/05/08/how-to-set-up-afp-filesharing-on-ubuntu/
+[natlk]: http://netatalk.sourceforge.net/
+[he]:    http://tunnelbroker.net/
+[radvd]: http://www.litech.org/radvd/
+[db-gi]: http://wiki.dropbox.com/TipsAndTricks/TextBasedLinuxInstall
+[db-us]: http://wiki.dropbox.com/TipsAndTricks/UbuntuServerInstall
+[setup]: https://gist.github.com/986199#file_dropbox_setup.sh
+[upst]:  http://upstart.ubuntu.com/
+[mb]:    http://en.wikipedia.org/wiki/Megabyte
+[mib]:   http://en.wikipedia.org/wiki/Mebibyte
