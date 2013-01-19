@@ -20,6 +20,7 @@ President, about winning a general election, or even about getting
 anyone but their base to take them seriously. (Huntsman is the only one
 I would have given any credit to as a sane, reasonable human being, but
 that's exactly why he was forced to drop out.)
+
 <!-- more -->
 
 Newt Gingrich and Rick Santorum are both insane. In most other

@@ -15,6 +15,7 @@ server variable or an address passed as a query parameter to a regular
 expression and returning the address and protocol as [JSON][].
 
 {% gist 986186 v6.php %}
+
 <!-- more -->
 
 I found the IPv6 regular expression through a Google search; and yes, I

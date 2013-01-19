@@ -19,6 +19,7 @@ deploy time. I wanted to stick as close to the default Heroku setup as
 possible without cluttering the repository with compiled pages, and
 Rack::Jekyll is unnecessarily complicated when [Rack::TryStatic works
 just fine][].
+
 <!-- more -->
 
 ## Compiling on deployment
