@@ -24,5 +24,6 @@
 {{ content }}
 {% endif %}
   </section>
-  {% if post.content | has_excerpt %}<footer><p><a href="{{ post.url }}">Read more…</a></p></footer>{% endif %}
+  {% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
+  {% if excerpted == 'true' %}<footer><p><a href="{{ post.url }}">Read more…</a></p></footer>{% endif %}
 </article>
