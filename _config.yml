@@ -4,6 +4,7 @@ prod_url: http://jbhannah.net/
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 paginate: 10
+pygments: true
 
 exclude: [compass.rb, config.ru, Gemfile, Gemfile.lock, LICENSE.txt, Procfile, Rakefile, README.md, sass, unicorn.rb, vendor]
 
