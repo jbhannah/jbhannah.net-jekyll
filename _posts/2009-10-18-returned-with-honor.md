@@ -9,7 +9,7 @@ tags:
 Just a little earlier than I had anticipated. tl;dr version: I’m not
 dead yet.
 
-I’m not going to go into the full details here; my mom [covered]() that
+I’m not going to go into the full details here; my mom [covered][] that
 already on the blog she had set up for me. Suffice it for me to say
 that I am not deathly ill, nor am I committed to a mental institution.
 Generalized anxiety disorder is a legitimate condition, and can be just
