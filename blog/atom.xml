@@ -17,7 +17,7 @@ layout: nil
   {% for post in site.posts limit:10 %}
   <entry>
     <id>{{ site.url }}{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url | remove_first:'/'}}"/>
+    <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url | remove_first: '/'}}"/>
     <title>{{ post.title }}</title>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
@@ -25,7 +25,10 @@ layout: nil
       <name>{{ site.name }}</name>
       <uri>{{ site.url }}</uri>
     </author>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <content type="html">
+      {{ post.content | excerpt | xml_escape }}
+      {% if post.content | has_excerpt %}&lt;p&gt;&lt;a href="{{ site.url }}{{ post.url | remove_first: '/'}}"&gt;Read more…&lt;/a&gt;&lt;/p&gt;{% endif %}
+    </content>
   </entry>
   {% endfor %}
  
