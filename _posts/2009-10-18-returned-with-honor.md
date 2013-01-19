@@ -7,22 +7,23 @@ tags:
 ---
 
 Just a little earlier than I had anticipated. tl;dr version: I’m not
-dead yet.
+dead yet. I came home because I'm dealing with depression and
+generalized anxiety disorder, which made it impossible for me to
+continue serving as a full-time missionary.
 
-I’m not going to go into the full details here; my mom [covered][] that
-already on the blog she had set up for me. Suffice it for me to say
-that I am not deathly ill, nor am I committed to a mental institution.
-Generalized anxiety disorder is a legitimate condition, and can be just
-as debilitating to being able to function out in the mission field as a
-broken femur. It’s something that takes considerable time, effort, and
-self-motivation to fix, and the conclusion that I and the mission
-president came to was that it would be impractical for me to try to put
-the necessary time and effort into this while staying out in the
-mission field. It is an honorable medical release, and I know what it
-is that I have to do and do not feel bad about having to come home, or
-like I failed in any way. I gave my fullest effort and intent to trying
-to stay out as long as I could, and hopefully managed to have a
-positive effect on the people I interacted with while I was there.
+I’m not going to go into the full details here; suffice it for me to
+say that I am not deathly ill, nor am I committed to a mental
+institution. Generalized anxiety disorder is a legitimate condition,
+and can be just as debilitating to being able to function out in the
+mission field as a broken femur. It’s something that takes considerable
+time, effort, and self-motivation to fix, and the conclusion that I and
+the mission president came to was that it would be impractical for me
+to try to put the necessary time and effort into this while staying out
+in the mission field. It is an honorable medical release, and I know
+what it is that I have to do and do not feel bad about having to come
+home, or like I failed in any way. I gave my fullest effort and intent
+to trying to stay out as long as I could, and hopefully managed to have
+a positive effect on the people I interacted with while I was there.
 
 <!-- more -->
 
