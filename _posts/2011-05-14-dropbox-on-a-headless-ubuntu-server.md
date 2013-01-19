@@ -3,7 +3,7 @@ layout: post
 title: Dropbox on a Headless Ubuntu Server
 published: true
 tags:
-- Linux
+  - Linux
 ---
 
 The first computer of my own that I've had was a Compaq desktop that,
