@@ -29,7 +29,7 @@ GEM
       liquid (~> 2.3)
       maruku (~> 0.5)
       pygments.rb (~> 0.3.2)
-    kgio (2.7.4)
+    kgio (2.8.0)
     kramdown (0.13.8)
     liquid (2.4.1)
     maruku (0.6.1)
