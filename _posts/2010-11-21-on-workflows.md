@@ -27,6 +27,8 @@ on it feels very natural with the touch screen, and I use it a lot as an
 extra screen in addition to my laptop and desktop while doing web
 development.
 
+<!-- more -->
+
 As for what it can't do: I have the Wolfram Alpha app on it, but it's
 nowhere near as powerful or versatile as using Mathematica on my
 desktop. It simply isn't designed to be used as something on which to do
