@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Congratulations and announcements
+title: Congratulations and Announcements
 published: true
 tags:
   - church
