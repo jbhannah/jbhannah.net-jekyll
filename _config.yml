@@ -11,9 +11,6 @@ exclude: [compass.rb, config.ru, Gemfile, Gemfile.lock, LICENSE.txt, Procfile, R
 name:     Jesse B. Hannah
 nickname: jbhannah
 
-flickr:
-  api_key: 22f828d239d1fd8c919b00f0d484304b
-
 social:
   - abbr: fb
     name: Facebook
