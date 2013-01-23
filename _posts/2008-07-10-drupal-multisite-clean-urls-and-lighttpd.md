@@ -180,7 +180,8 @@ Image.module (Drupal project name "image"; run as `root` or `sudo`):
 ~# drupal-install-mod image-6.x-1.0-alpha2
 {% endhighlight %}
 
-then go to the Drupal modules administration page and enable the newly-downloaded module.
+then go to the Drupal modules administration page and enable the
+newly-downloaded module.
 
 Now, say you've had this site running nicely for a while, then a new
 version of Drupal comes out. Luckily, thanks to the filesystem layout
