@@ -26,6 +26,8 @@ Rebecca, Brother Wood, and Elders Jeffrey and Wood.)
 
 {% flickr 5227110285 %}
 
+<!-- more -->
+
 I also have a couple of announcements to make; one small, one pretty
 big. The first is that this blog has relocated again, this time to
 a [Linode][] Linux-based VPS---which is also my new recommendation for
@@ -34,8 +36,6 @@ and the ability to combine and work with multiple "linodes," free DNS
 services...I can't think of a downside to it besides the fact that their
 DNS manager won't let you use a hostname (A/AAAA record) as the target
 for a CNAME record.
-
-<!-- more -->
 
 The blog itself is running the latest beta of [WordPress][] 2.7,
 with [IntenseDebate][] as the comment system. All of my blog posts, both
