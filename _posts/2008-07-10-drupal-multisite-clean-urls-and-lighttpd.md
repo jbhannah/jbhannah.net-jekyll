@@ -99,7 +99,7 @@ directory `/var/www/example1.com/sub/htdocs`.
 
 To handle Drupal's clean URLs we'll use lighttpd's [`mod_magnet`][],
 which lets you use [Lua][] scripts to handle requests in lighttpd. Save
-the following as `/etc/lighttpd/drupal.lua`:
+the following as `/etc/lighttpd/drupal.lua`:
 
 {% gist 986210 drupal.lua %}
 
