@@ -29,6 +29,10 @@ module Jekyll
         input
       end
     end
+
+    def condense_spaces(input)
+      input.gsub(/\s{2,}/, ' ').strip
+    end
   end
 end
 
