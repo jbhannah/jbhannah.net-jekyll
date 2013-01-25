@@ -10,9 +10,10 @@ site on Heroku runs on a single dyno with no addons and the
 
 ## Copyright
 
-This site in source code form is liscensed under the [MIT License][].
-The content as compiled and displayed at [jbhannah.net][] is
-licensed under [Creative Commons BY-NC-SA 3.0][CC BY-NC-SA].
+This site in source code form is liscensed under the [MIT License][],
+except for plugins that specify other licensing terms. The content as
+compiled and displayed at [jbhannah.net][] is licensed under [Creative
+Commons BY-NC-SA 3.0][CC BY-NC-SA].
 
 [compiled]: http://jbhannah.net/blog/2013/01/16/jekyll-on-heroku-without-rack-jekyll-or-custom-buildpacks.html
 [Jekyll]: http://jekyllrb.com/
