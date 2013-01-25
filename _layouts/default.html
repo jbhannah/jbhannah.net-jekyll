@@ -10,6 +10,14 @@
     <meta name="description" content="{{ description }}" />
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ' ' }}" />{% endif %}
 
+    {% if page.title %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@jbhannah" />
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url | remove_first: '/' }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    {% endif %}
+
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
     <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
