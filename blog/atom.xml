@@ -6,7 +6,7 @@ layout: nil
  
   <title>{{ site.name }}</title>
   <link href="{{ site.url }}"/>
-  <link type="application/atom+xml" rel="self" href="{{ site.url }}blog/atom.xml"/>
+  <link type="application/atom+xml" rel="self" href="{{ site.url }}/blog/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}</id>
   <author>
@@ -17,7 +17,7 @@ layout: nil
   {% for post in site.posts limit:10 %}
   <entry>
     <id>{{ site.url }}{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url | remove_first: '/' }}"/>
+    <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
     <title>{{ post.title }}</title>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
@@ -27,7 +27,7 @@ layout: nil
     </author>
     <content type="html">
       {{ post.content | excerpt | xml_escape }}
-      {% if post.content | has_excerpt %}&lt;p&gt;&lt;a href="{{ site.url }}{{ post.url | remove_first: '/'}}"&gt;Read more…&lt;/a&gt;&lt;/p&gt;{% endif %}
+      {% if post.content | has_excerpt %}&lt;p&gt;&lt;a href="{{ site.url }}{{ post.url }}"&gt;Read more…&lt;/a&gt;&lt;/p&gt;{% endif %}
     </content>
   </entry>
   {% endfor %}
