@@ -91,7 +91,9 @@
     </div>
 
     <footer id="footer">
-      Copyright © {{ site.time | date: "%Y" }} <span id="name" itemprop="name"><a itemprop="url"
+      Copyright © {{ site.time | date: "%Y" }}
+      <span id="name"{% if page.body_class == 'index' %} itemprop="name"{% endif %}>
+        <a{% if page.body_class == 'index' %} itemprop="url"{% endif %}
           href="{{ site.url }}">{{ site.name }}</a></span>.
       <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">Some Rights Reserved</a>.<br />
       Powered by <a href="http://www.heroku.com/">Heroku</a> and <a href="http://jekyllrb.com/">Jekyll</a>.
