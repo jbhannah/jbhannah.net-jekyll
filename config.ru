@@ -11,4 +11,6 @@ use Rack::TryStatic,
   :urls => %w[/],
   :try  => ['index.html', '/index.html']
 
+use Rack::Deflater
+
 run Rack::NotFound.new('_site/404.html')
