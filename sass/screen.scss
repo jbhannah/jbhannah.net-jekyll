@@ -45,6 +45,8 @@ body {
 
       section#content {
         @include column(18, true);
+
+        line-height: 1.6;
       }
     }
 
