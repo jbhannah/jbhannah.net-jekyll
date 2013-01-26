@@ -4,19 +4,18 @@
     <meta charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
     {% capture description %}{{ content | raw_content | excerpt | strip_html | newline_to_br | replace: '<br />', ' ' | strip_newlines | condense_spaces | truncate: 250 }}{% endcapture %}
-
     <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{{ description }}" />
-    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ' ' }}" />{% endif %}
-
+    <meta name="description" content="{{ description }}" />{% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ' ' }}" />{% endif %}
     {% if page.title %}
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@jbhannah" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ description }}" />
-    {% endif %}
 
+    {% endif %}
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
     <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -34,8 +33,8 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'jbhannah{% unless site.url == site.prod_url %}-devel{% endunless %}';
-
       {% if site.url == site.prod_url %}
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34516698-1']);
       _gaq.push(['_trackPageview']);
@@ -45,8 +44,8 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-      {% endif %}
 
+      {% endif %}
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
       (function(d, s, id) {
@@ -93,8 +92,7 @@
     <footer id="footer">
       Copyright © {{ site.time | date: "%Y" }}
       <span id="name"{% if page.body_class == 'index' %} itemprop="name"{% endif %}>
-        <a{% if page.body_class == 'index' %} itemprop="url"{% endif %}
-          href="{{ site.url }}">{{ site.name }}</a></span>.
+        <a{% if page.body_class == 'index' %} itemprop="url"{% endif %} href="{{ site.url }}">{{ site.name }}</a></span>.
       <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">Some Rights Reserved</a>.<br />
       Powered by <a href="http://www.heroku.com/">Heroku</a> and <a href="http://jekyllrb.com/">Jekyll</a>.
       <a href="https://github.com/jbhannah/jbhannah.net">Source code on GitHub</a>.
