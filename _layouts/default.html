@@ -6,8 +6,7 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
     {% unless page.meta_tags == false %}
     <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{{ description }}" />{% if page.tags %}
-    <meta name="keywords" content="{{ page.tags | join: ' ' }}" />{% endif %}
+    <meta name="description" content="{{ description }}" />
 
     <meta property="twitter:card"    content="summary" />
     <meta property="twitter:creator" content="@jbhannah" />

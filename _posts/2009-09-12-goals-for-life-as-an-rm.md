@@ -2,8 +2,6 @@
 layout: post
 title: Goals for Life as an RM
 published: true
-tags:
-- mission
 ---
 
  * Be sealed for eternity in the Temple to a worthy young woman.

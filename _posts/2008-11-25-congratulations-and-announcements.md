@@ -2,12 +2,6 @@
 layout: post
 title: Congratulations and Announcements
 published: true
-tags:
-  - church
-  - friends
-  - Linux
-  - mission
-  - school
 ---
 
 Just over one week ago, on 15 November 2008, [my best friend Rebecca was

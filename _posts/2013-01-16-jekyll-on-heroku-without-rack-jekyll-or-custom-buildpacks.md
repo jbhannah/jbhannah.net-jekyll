@@ -2,11 +2,6 @@
 layout:    post
 title:     Jekyll on Heroku Without Rack::Jekyll or Custom Buildpacks
 published: true
-tags:
-  - code
-  - Heroku
-  - Jekyll
-  - Ruby
 ---
 
 For a while now, this site has been hosted on [Heroku][] as static files

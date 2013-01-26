@@ -2,8 +2,6 @@
 layout: post
 title: On iPad and Workflows
 published: true
-tags:
-  - iPad
 ---
 
 Something I'm kinda surprised I haven't written more about is the

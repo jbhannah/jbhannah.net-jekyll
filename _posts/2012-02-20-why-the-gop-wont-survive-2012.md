@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Why the GOP Won't Survive 2012, and Why a Democrat Thinks That's a Bad Thing
-tags:
-  - politics
+published: true
 ---
 
 Whether or not the Mayans (a) were full of crap or (b) are being

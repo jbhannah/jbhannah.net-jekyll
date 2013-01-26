@@ -2,8 +2,6 @@
 layout: post
 title: Returned With Honor
 published: true
-tags:
-- mission
 ---
 
 Just a little earlier than I had anticipated. tl;dr version: I’m not

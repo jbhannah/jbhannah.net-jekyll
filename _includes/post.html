@@ -9,8 +9,6 @@
       –
       {% if post %}
       <a href="{{ post.url }}#disqus_thread">Comments</a>
-      {% else %}
-      {% unless page.tags == empty %}tagged {{ page.tags | array_to_sentence_string }}{% endunless %}
       {% endif %}
     </div>
 

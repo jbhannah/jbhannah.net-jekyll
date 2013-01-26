@@ -2,11 +2,6 @@
 layout: post
 title: Simple PHP IPv6 Detection Script
 published: true
-tags:
-  - code
-  - IPv6
-  - jQuery
-  - PHP
 ---
 
 This is a simple [PHP][] script I wrote for detecting whether a visitor

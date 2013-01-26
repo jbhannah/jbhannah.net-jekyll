@@ -2,8 +2,6 @@
 layout: post
 title: 2006 Mac Pro Bluetooth Reception/Stuttering Fix
 published: true
-tags:
-- Mac
 ---
 
 I now have an [Apple Magic Mouse][] and [Apple Wireless Keyboard][] and
