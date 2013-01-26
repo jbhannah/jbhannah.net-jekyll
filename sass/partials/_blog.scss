@@ -17,6 +17,16 @@ article.post {
 
     margin-bottom: 1em;
   }
+
+  .post_content {
+    .footnotes {
+      @include blueprint-typography-body(14px);
+
+      margin: 0 3em;
+      padding-top: 1.5em;
+      border-top: 1px dashed silver;
+    }
+  }
 }
 
 .social_share {

@@ -51,8 +51,6 @@ The [entire source of this site][] is available on GitHub, so you can
 see there how I've [configured Unicorn][], my [Compass settings][],
 [Gemfile][], &c., as a basis for your own deployment.
 
-## Footnotes
-
 [^precompilers]: Using Liquid tags and Jekyll syntax in files requires
     using a [converter plugin for Jekyll][] and adding the Jekyll YAML
     front matter to the files to be converted.
