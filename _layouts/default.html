@@ -9,11 +9,11 @@
     <meta name="description" content="{{ description }}" />{% if page.tags %}
     <meta name="keywords" content="{{ page.tags | join: ' ' }}" />{% endif %}
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="@jbhannah" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:description" content="{{ description }}" />
+    <meta property="twitter:card"    content="summary" />
+    <meta property="twitter:creator" content="@jbhannah" />
+    <meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:title"        content="{{ page.title }}" />
+    <meta property="og:description"  content="{{ description }}" />
     {% endunless %}
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
