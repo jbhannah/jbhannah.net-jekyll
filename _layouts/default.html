@@ -6,7 +6,6 @@
     {% capture description %}{{ content | raw_content | excerpt | strip_html | newline_to_br | replace: '<br />', ' ' | strip_newlines | condense_spaces | truncate: 250 }}{% endcapture %}
 
     <meta name="author" content="{{ site.name }}" />
-    <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
     <meta name="description" content="{{ description }}" />
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ' ' }}" />{% endif %}
 
@@ -75,8 +74,8 @@
       <div id="main">
         <header id="header">
           <hgroup id="site_title">
-            <h1>{{ site.name }}</h1>
-            <h2>{{ site.nickname }}</h2>
+            <h1 id="name" itemprop="name">{{ site.name }}</h1>
+            <h2 id="nickname" itemprop="nickname">{{ site.nickname }}</h2>
           </hgroup>
         </header>
 
@@ -92,7 +91,7 @@
     </div>
 
     <footer id="footer">
-      Copyright © {{ site.time | date: "%Y" }} <a href="{{ site.url }}">{{ site.name }}</a>.
+      Copyright © {{ site.time | date: "%Y" }} <a id="url" itemprop="url" href="{{ site.url }}">{{ site.name }}</a>.
       <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">Some Rights Reserved</a>.<br />
       Powered by <a href="http://www.heroku.com/">Heroku</a> and <a href="http://jekyllrb.com/">Jekyll</a>.
       <a href="https://github.com/jbhannah/jbhannah.net">Source code on GitHub</a>.
