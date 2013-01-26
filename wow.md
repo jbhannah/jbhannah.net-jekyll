@@ -1,6 +1,7 @@
 ---
 layout: default
 title: World of Warcraft roster
+meta_tags: false
 ---
 
 # {{ page.title }}
