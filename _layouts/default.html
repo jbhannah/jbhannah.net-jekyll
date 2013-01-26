@@ -11,7 +11,7 @@
 
     <meta property="twitter:card"    content="summary" />
     <meta property="twitter:creator" content="@jbhannah" />
-    <meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:url"          content="{{ site.url }}{% unless page.url == '/index.html' %}{{ page.url }}{% endunless %}" />
     <meta property="og:title"        content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
     <meta property="og:description"  content="{{ description }}" />
     {% endunless %}
