@@ -7,15 +7,13 @@
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ description }}" />{% if page.tags %}
     <meta name="keywords" content="{{ page.tags | join: ' ' }}" />{% endif %}
-    {% if page.title %}
-
+    {% unless page.twitter_card == false %}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@jbhannah" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ description }}" />
-
-    {% endif %}
+    {% endunless %}
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
     <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -34,7 +32,6 @@
     <script type="text/javascript">
       var disqus_shortname = 'jbhannah{% unless site.url == site.prod_url %}-devel{% endunless %}';
       {% if site.url == site.prod_url %}
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34516698-1']);
       _gaq.push(['_trackPageview']);
@@ -44,7 +41,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
       {% endif %}
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
