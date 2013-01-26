@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Goals for Life as an RM
+title: Goals for life as an RM
 published: true
 ---
 

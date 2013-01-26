@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple PHP IPv6 Detection Script
+title: Simple PHP IPv6 detection script
 published: true
 ---
 

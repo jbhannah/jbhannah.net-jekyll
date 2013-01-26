@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Returned With Honor
+title: Returned with honor
 published: true
 ---
 

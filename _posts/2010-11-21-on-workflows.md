@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On iPad and Workflows
+title: On iPad and workflows
 published: true
 ---
 

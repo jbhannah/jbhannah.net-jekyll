@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2006 Mac Pro Bluetooth Reception/Stuttering Fix
+title: 2006 Mac Pro Bluetooth reception/stuttering fix
 published: true
 ---
 

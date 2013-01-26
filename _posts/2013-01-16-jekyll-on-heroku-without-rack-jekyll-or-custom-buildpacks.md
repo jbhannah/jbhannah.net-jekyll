@@ -1,6 +1,6 @@
 ---
 layout:    post
-title:     Jekyll on Heroku Without Rack::Jekyll or Custom Buildpacks
+title:     Jekyll on Heroku without Rack::Jekyll or custom buildpacks
 published: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Congratulations and Announcements
+title: Congratulations and announcements
 published: true
 ---
 

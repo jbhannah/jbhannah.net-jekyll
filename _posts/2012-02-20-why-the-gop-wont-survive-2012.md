@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why the GOP Won't Survive 2012, and Why a Democrat Thinks That's a Bad Thing
+title: Why the GOP won't survive 2012, and why a Democrat thinks that's a bad thing
 published: true
 ---
 
