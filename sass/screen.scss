@@ -44,7 +44,6 @@ body {
       }
 
       section#content {
-        @include blueprint-typography-body(14px);
         @include column(18, true);
       }
     }
