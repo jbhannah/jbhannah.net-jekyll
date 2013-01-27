@@ -94,9 +94,10 @@ body {
   }
 
   footer#footer {
+    @include blueprint-typography-body(12px);
+
     width: 100%;
     text-align: center;
-    font-size: smaller;
   }
 }
 
