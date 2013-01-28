@@ -1,5 +1,7 @@
 # jbhannah.net
 
+[![Dependency Status](https://gemnasium.com/jbhannah/jbhannah.net.png)](https://gemnasium.com/jbhannah/jbhannah.net)
+
 Homepage and weblog of Jesse B. Hannah.
 
 ## Deployment
