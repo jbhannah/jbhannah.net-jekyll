@@ -64,5 +64,5 @@ DEPENDENCIES
   pygmentize (~> 0.0.3)
   rack-contrib (~> 1.1.0)
   rack-rewrite (~> 1.3.3)
-  rake (~> 10.0.0)
+  rake (~> 10.0.3)
   unicorn (~> 4.5.0)
