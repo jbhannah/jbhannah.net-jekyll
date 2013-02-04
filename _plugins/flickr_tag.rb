@@ -1,4 +1,4 @@
-# Flickr Photo Tag
+# Flickr Tag
 #
 # A Jekyll plug-in for embedding Flickr photos in your Liquid templates.
 # 
@@ -7,30 +7,26 @@
 #   {% flickr 1234567890 %}
 #   {% flickr 1234567890 "Large Square" %}
 #
-#   ... where 1234567890 is the Flickr photo ID, and "Large Square" is the size label, as defined here by Flickr:
-#   
+# ... where 1234567890 is the Flickr photo ID, and "Large Square" is the size label, as defined here by Flickr:
+# 
 #   http://www.flickr.com/services/api/flickr.photos.getSizes.html
-
-#   Medium (~500px width) is the default.
 #
-# Requires a Flickr API key in _config.yml (where "flickr:" is defined on the root level):
+# Medium (~500px width) is the default.
 #
-#   flickr:
-#     api_key: 21u3gj12kg34jh12gk3j4hg1k2j3h4g
+# Requires a Flickr API key and secret set in environment variables FLICKR_API_KEY and FLICKR_API_SECRET.
 #
 # You can obtain a Flickr API key here: http://www.flickr.com/services/apps/create/
 #
-# Author: Chris Nunciato
-# Source: http://github.com/cnunciato/jekyll-flickr
+# Based on the jekyll-flickr plugin by Chris Nunciato (http://github.com/cnunciato/jekyll-flickr)
+#
+# Rewritten by Jesse B. Hannah to use the flickraw gem
+# Source: https://github.com/jbhannah/jbhannah.net/blob/master/_plugins/flickr_tag.rb
 
-require 'nokogiri'
-require 'typhoeus'
+require 'flickraw'
 require 'shellwords'
 
 module Jekyll
-
   class FlickrTag < Liquid::Tag
-
     @@cached = {} # Prevents multiple requests for the same photo
 
     def initialize(tag_name, markup, tokens)
@@ -40,59 +36,40 @@ module Jekyll
     end
 
     def render(context)
-        @api_key = ENV['FLICKR_API_KEY']
-        @photo.merge!(@@cached[photo_key] || get_photo)
+      FlickRaw.api_key = ENV['FLICKR_API_KEY']
+      FlickRaw.shared_secret = ENV['FLICKR_API_SECRET']
 
-        selected_size = @photo[:sizes][@photo[:size]]
-        "<a class=\"thumbnail\" href=\"#{@photo[:url]}\"><img src=\"#{selected_size[:source]}\" title=\"#{@photo[:title]}\" alt=\"#{@photo[:caption]}\" /></a>"
+      @photo.merge!(@@cached[photo_key] || get_photo)
+
+      selected_size = @photo[:sizes][@photo[:size]]
+      "<a class=\"thumbnail\" href=\"#{@photo[:url]}\"><img src=\"#{selected_size[:source]}\" title=\"#{@photo[:title]}\" alt=\"#{@photo[:caption]}\" /></a>"
     end
 
     def get_photo
-        hydra = Typhoeus::Hydra.new
+      sizes = flickr.photos.getSizes photo_id: @photo[:id]
+      sizes.to_hash["size"].each do |size|
+        @photo[:sizes][size["label"]] = {
+          width: size["width"],
+          height: size["height"],
+          source: size["source"],
+          url: size["url"]
+        }
+      end
 
-        urls_req = Typhoeus::Request.new("http://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=#{@api_key}&photo_id=#{@photo[:id]}")
-        urls_req.on_complete do |resp|
-            parsed = Nokogiri::XML(resp.body)
-            parsed.css("size").each do |el|
-                @photo[:sizes][el["label"]] = { 
-                    :width => el["width"], 
-                    :height => el["height"],
-                    :source => el["source"], 
-                    :url => el["url"]
-                }
-            end
-        end
+      info = flickr.photos.getInfo photo_id: @photo[:id]
+      @photo[:title] = info.title
+      @photo[:caption] = info.description
+      @photo[:url] = info.urls.url[0]["_content"]
 
-        info_req = Typhoeus::Request.new("http://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=#{@api_key}&photo_id=#{@photo[:id]}")
-        info_req.on_complete do |resp|
-            parsed = Nokogiri::XML(resp.body)
-            @photo[:title] = parsed.css("title").inner_text
-            @photo[:caption] = parsed.css("description").inner_text
-            @photo[:url] = parsed.css("urls url").inner_text
-        end
+      @photo[:exif] = flickr.photos.getExif photo_id: @photo[:id]
 
-        exif_req = Typhoeus::Request.new("http://api.flickr.com/services/rest/?method=flickr.photos.getExif&api_key=#{@api_key}&photo_id=#{@photo[:id]}")
-        exif_req.on_complete do |resp|
-            parsed = Nokogiri::XML(resp.body)
-            parsed.css("exif").each do |el|
-                @photo[:exif][el["label"]] = el.first_element_child.inner_text
-            end
-        end
-
-        hydra.queue(urls_req)
-        hydra.queue(info_req)
-        hydra.queue(exif_req)
-        hydra.run
-
-        @@cached[photo_key] = @photo
+      @@cached[photo_key] = @photo
     end
 
     def photo_key
-        "#{@photo[:id]}"
+      "#{@photo[:id]}"
     end
-
   end
-
 end
 
 Liquid::Template.register_tag('flickr', Jekyll::FlickrTag)
