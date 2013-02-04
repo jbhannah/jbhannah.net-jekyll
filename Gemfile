@@ -1,6 +1,6 @@
 source :rubygems
 
-gem "rake", "~> 10.0.0"
+gem "rake", "~> 10.0.3"
 gem "activesupport", "~> 3.2.11"
 
 gem "jekyll", "~> 0.12.0"
