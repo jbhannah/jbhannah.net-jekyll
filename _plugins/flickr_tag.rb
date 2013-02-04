@@ -25,6 +25,9 @@
 require 'flickraw'
 require 'shellwords'
 
+FlickRaw.api_key = ENV['FLICKR_API_KEY']
+FlickRaw.shared_secret = ENV['FLICKR_API_SECRET']
+
 module Jekyll
   class FlickrTag < Liquid::Tag
     @@cached = {} # Prevents multiple requests for the same photo
@@ -36,9 +39,6 @@ module Jekyll
     end
 
     def render(context)
-      FlickRaw.api_key = ENV['FLICKR_API_KEY']
-      FlickRaw.shared_secret = ENV['FLICKR_API_SECRET']
-
       @photo.merge!(@@cached[photo_key] || get_photo)
 
       selected_size = @photo[:sizes][@photo[:size]]
@@ -49,17 +49,17 @@ module Jekyll
       sizes = flickr.photos.getSizes photo_id: @photo[:id]
       sizes.to_hash["size"].each do |size|
         @photo[:sizes][size["label"]] = {
-          width: size["width"],
+          width:  size["width"],
           height: size["height"],
           source: size["source"],
-          url: size["url"]
+          url:    size["url"]
         }
       end
 
       info = flickr.photos.getInfo photo_id: @photo[:id]
-      @photo[:title] = info.title
+      @photo[:title]   = info.title
       @photo[:caption] = info.description
-      @photo[:url] = info.urls.url[0]["_content"]
+      @photo[:url]     = info.urls.url[0]["_content"]
 
       @photo[:exif] = flickr.photos.getExif photo_id: @photo[:id]
 
