@@ -11,7 +11,7 @@ gem "pygmentize", "~> 0.0.3"
 
 gem "rack-contrib", "~> 1.1.0"
 gem "rack-rewrite", "~> 1.3.3"
-gem "unicorn", "~> 4.5.0"
+gem "unicorn", "~> 4.6.0"
 
 group :development do
   gem "foreman", "~> 0.61"
