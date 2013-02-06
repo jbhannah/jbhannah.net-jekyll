@@ -70,3 +70,4 @@ by removing the separate commands for and references to Compass.
 [configured Unicorn]: https://github.com/jbhannah/jbhannah.net/blob/master/unicorn.rb
 [Compass settings]: https://github.com/jbhannah/jbhannah.net/blob/master/compass.rb
 [Gemfile]: https://github.com/jbhannah/jbhannah.net/blob/master/Gemfile
+[`jekyll-assets`]: https://github.com/ixti/jekyll-assets
