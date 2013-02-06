@@ -6,7 +6,7 @@ permalink: /blog/:year/:month/:day/:title.html
 paginate: 10
 pygments: true
 
-exclude: [compass.rb, config.ru, Gemfile, Gemfile.lock, LICENSE.txt, Procfile, Rakefile, README.md, unicorn.rb, vendor]
+exclude: [config.ru, Gemfile, Gemfile.lock, LICENSE.txt, Procfile, Rakefile, README.md, unicorn.rb, vendor]
 
 name:     Jesse B. Hannah
 nickname: jbhannah
