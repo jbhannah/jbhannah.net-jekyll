@@ -1,0 +1,60 @@
+#= require vendor/modernizr
+
+$ ->
+  $("a[href^=http]").each (index, element) ->
+    if @href.indexOf("http://" + location.hostname) is -1
+      rel = $(element).attr "rel"
+      unless rel is `undefined`
+        rel += " "
+      else
+        rel = ""
+      $(element).attr "rel", rel + "external"
+
+  $("a[rel~=external]").attr("target", "_blank")
+<% if site.config['url'] != site.config['prod_url'] %>
+    .click =>
+      _gaq.push ["_trackEvent", "Outbound Links", @href, @text]
+<% end %>
+
+<% if site.config['url'] != site.config['prod_url'] %>
+_gaq = _gaq or []
+_gaq.push ["_setAccount", "UA-34516698-1"]
+_gaq.push ["_trackPageview"]
+(->
+  ga = document.createElement("script")
+  ga.type = "text/javascript"
+  ga.async = true
+  ga.src = ((if "https:" is document.location.protocol then "https://ssl" else "http://www")) + ".google-analytics.com/ga.js"
+  s = document.getElementsByTagName("script")[0]
+  s.parentNode.insertBefore ga, s
+)()
+<% end %>
+
+((d, s, id) ->
+  js = undefined
+  fjs = d.getElementsByTagName(s)[0]
+  unless d.getElementById(id)
+    js = d.createElement(s)
+    js.id = id
+    js.src = "https://platform.twitter.com/widgets.js"
+    fjs.parentNode.insertBefore js, fjs
+) document, "script", "twitter-wjs"
+
+((d, s, id) ->
+  js = undefined
+  fjs = d.getElementsByTagName(s)[0]
+  return  if d.getElementById(id)
+  js = d.createElement(s)
+  js.id = id
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"
+  fjs.parentNode.insertBefore js, fjs
+) document, "script", "facebook-jssdk"
+
+(->
+  po = document.createElement("script")
+  po.type = "text/javascript"
+  po.async = true
+  po.src = "https://apis.google.com/js/plusone.js"
+  s = document.getElementsByTagName("script")[0]
+  s.parentNode.insertBefore po, s
+)()

@@ -1,12 +1,6 @@
 namespace :assets do
-  desc 'Compile Compass stylesheets'
-  task :compass do
-    sh "bundle exec compass compile -c compass.rb"
-  end
-
   desc 'Precompile assets'
   task :precompile do
-    Rake::Task['assets:compass'].invoke
     sh "bundle exec jekyll"
   end
 end
@@ -42,8 +36,7 @@ namespace :new do
   end
 end
 
-desc 'Start Jekyll preview server and Compass watcher'
+desc 'Start Jekyll preview server'
 task :start do
-  Rake::Task['assets:compass'].invoke
-  exec "bundle exec foreman start -c compass=1,jekyll=1"
+  exec "bundle exec foreman start -c jekyll=1"
 end

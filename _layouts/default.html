@@ -16,48 +16,18 @@
     {% endunless %}
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
-    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="{% asset_path screen.css %}" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{% asset_path print.css %}" media="print" rel="stylesheet" type="text/css" />
     <!--[if lt IE 8]>
-      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <link href="{% asset_path ie.css %}" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
 
     <link rel="alternate" type="application/atom+xml" title="Blog Atom feed" href="{{ site.url }}/blog/atom.xml" />
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/js/modernizr.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
 
-    <script type="text/javascript">
-      var disqus_shortname = 'jbhannah{% unless site.url == site.prod_url %}-devel{% endunless %}';
-      {% if site.url == site.prod_url %}
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-34516698-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-      {% endif %}
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
+    {% javascript script %}
   </head>
 
   <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
