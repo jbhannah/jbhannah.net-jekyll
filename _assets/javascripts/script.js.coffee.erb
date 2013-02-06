@@ -11,12 +11,12 @@ $ ->
       $(element).attr "rel", rel + "external"
 
   $("a[rel~=external]").attr("target", "_blank")
-<% if site.config['url'] != site.config['prod_url'] %>
+<% if site.config['url'] == site.config['prod_url'] %>
     .click =>
       _gaq.push ["_trackEvent", "Outbound Links", @href, @text]
 <% end %>
 
-<% if site.config['url'] != site.config['prod_url'] %>
+<% if site.config['url'] == site.config['prod_url'] %>
 _gaq = _gaq or []
 _gaq.push ["_setAccount", "UA-34516698-1"]
 _gaq.push ["_trackPageview"]
