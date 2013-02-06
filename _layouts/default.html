@@ -16,10 +16,10 @@
     {% endunless %}
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
-    <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="{% asset_path screen.css %}" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{% asset_path print.css %}" media="print" rel="stylesheet" type="text/css" />
     <!--[if lt IE 8]>
-      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <link href="{% asset_path ie.css %}" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
 
     <link rel="alternate" type="application/atom+xml" title="Blog Atom feed" href="{{ site.url }}/blog/atom.xml" />
