@@ -10,6 +10,7 @@ gem "pygmentize", "~> 0.0.3"
 
 gem "jekyll-assets", "~> 0.3.1"
 gem "compass", "~> 0.12.2"
+gem "uglifier", "~> 1.3.0"
 
 gem "rack-contrib", "~> 1.1.0"
 gem "rack-rewrite", "~> 1.3.3"

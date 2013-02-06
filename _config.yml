@@ -8,6 +8,11 @@ pygments: true
 
 exclude: [config.ru, Gemfile, Gemfile.lock, LICENSE.txt, Procfile, Rakefile, README.md, unicorn.rb, vendor]
 
+assets:
+  compress:
+    js:  uglifier
+    css: sass
+
 name:     Jesse B. Hannah
 nickname: jbhannah
 
