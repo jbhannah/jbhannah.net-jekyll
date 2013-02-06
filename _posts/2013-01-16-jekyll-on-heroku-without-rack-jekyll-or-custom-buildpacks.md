@@ -24,12 +24,10 @@ just fine][].
 the [Rails asset pipeline][] to precompile [CoffeeScript][] files,
 [Compass][] stylesheets, &c., but any site that uses the Ruby buildpack
 can add a task with the same name to its Rakefile and have it run every
-time the site is pushed to Heroku. This is not only perfect for
-compiling Jekyll pages, but also allows the use of Compass,
-CoffeeScript, or any other such precompiler we want[^precompilers]. For
-example, to compile Jekyll files and Compass stylesheets[^compass]:
+time the site is pushed to Heroku. It turns out this is perfect for
+compiling Jekyll pages:
 
-{% gist 4551206 Rakefile %} 
+{% gist 4551206 Rakefile %}
 
 ## Serving from Rack
 
@@ -43,25 +41,19 @@ specific file in the event of a 404 error. Add `rack_contrib` to the
 {% gist 4551206 config.ru %}
 
 Finally, create a `Procfile` with a web task for Heroku to run your
-server of choice, such as Unicorn[^unicorn]:
+server of choice, such as Unicorn (assuming you have added `unicorn` to
+your `Gemfile` and configured it appropriately):
 
 {% gist 4551206 Procfile %}
 
 The [entire source of this site][] is available on GitHub, so you can
-see there how I've [configured Unicorn][], my [Compass settings][],
-[Gemfile][], &c., as a basis for your own deployment.
+see there how I've [configured Unicorn][], my [Gemfile][], &c., as a
+basis for your own deployment.
 
-[^precompilers]: Using Liquid tags and Jekyll syntax in files requires
-    using a [converter plugin for Jekyll][] and adding the Jekyll YAML
-    front matter to the files to be converted.
-
-[^compass]: Assuming you have added `compass` to your `Gemfile` and
-    configured it with a `compass.rb` file. These stylesheets are
-    compiled before and separately from all of the files processed by
-    Jekyll.
-
-[^unicorn]: Again, assuming you have added `unicorn` to your `Gemfile`
-    and configured it appropriately.
+**Updated 2013-02-06:** I'm now using [`jekyll-assets`][] to handle
+compiling Compass and CoffeeScript files as part of Jekyll's own build
+process. I've updated this post and its associated Gist to reflect this
+by removing the separate commands for and references to Compass.
 
 [Heroku]: http://www.heroku.com/
 [Jekyll]: http://jekyllrb.com/
@@ -78,4 +70,3 @@ see there how I've [configured Unicorn][], my [Compass settings][],
 [configured Unicorn]: https://github.com/jbhannah/jbhannah.net/blob/master/unicorn.rb
 [Compass settings]: https://github.com/jbhannah/jbhannah.net/blob/master/compass.rb
 [Gemfile]: https://github.com/jbhannah/jbhannah.net/blob/master/Gemfile
-[converter plugin for Jekyll]: https://github.com/mojombo/jekyll/wiki/Plugins
