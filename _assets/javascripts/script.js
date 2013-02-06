@@ -1,3 +1,5 @@
+//= require vendor/modernizr
+
 $(function() {
   $('a[href^=http]').each(function() {
     if (this.href.indexOf("http://" + location.hostname) == -1) {
