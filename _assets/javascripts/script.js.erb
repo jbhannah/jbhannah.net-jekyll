@@ -13,13 +13,17 @@ $(function() {
     }
   });
 
-  $('a[rel~=external]').attr('target', '_blank').click(function() {
-    _gaq.push(['_trackEvent', 'Outbound Links', $(this).href, $(this).text]);
-  });
+  $('a[rel~=external]').attr('target', '_blank')
+<% if site.config['url'] == site.config['prod_url'] %>
+    .click(function() {
+      _gaq.push(['_trackEvent', 'Outbound Links', $(this).href, $(this).text]);
+    })
+<% end %>
+  ;
 });
 
-console.log('<%= site.config['url'] %>');
 var disqus_shortname = 'jbhannah<%= '-devel' unless site.config['url'] == site.config['prod_url'] %>'
+
 <% if site.config['url'] == site.config['prod_url'] %>
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-34516698-1']);
@@ -31,6 +35,7 @@ _gaq.push(['_trackPageview']);
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 <% end %>
+
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
 (function(d, s, id) {
