@@ -81,7 +81,6 @@ DEPENDENCIES
   foreman (~> 0.61)
   jekyll (~> 0.12.0)
   jekyll-assets (~> 0.3.1)
-  kramdown (~> 0.13.8)
   pygmentize (~> 0.0.3)
   rack-contrib (~> 1.1.0)
   rack-rewrite (~> 1.3.3)
