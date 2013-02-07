@@ -10,10 +10,13 @@ WordPress blog or my previous Rails-based site (even with caching). Most
 sets of instructions for deploying Jekyll sites to Heroku either say to
 use [Rack::Jekyll][] and commit the site's compiled static files into
 Git, or to use a [custom Heroku buildpack][] to compile the site at
-deploy time. I wanted to stick as close to the default Heroku setup as
-possible without cluttering the repository with compiled pages, and
-Rack::Jekyll is unnecessarily complicated when [Rack::TryStatic works
-just fine][].
+deploy time; [GitHub Pages][] wasn't an option, either, since they don't
+allow plugins and I would have to commit the compiled static files to
+Git, and although I've borrowed [a few plugins][] from [Octopress][], I
+wanted to start from a clean repository. Ultimately, I wanted to stick
+as close to the default Heroku setup as possible without cluttering the
+repository with compiled pages, and Rack::Jekyll is unnecessarily
+complicated when [Rack::TryStatic works just fine][].
 
 <!-- more -->
 
@@ -59,6 +62,9 @@ by removing the separate commands for and references to Compass.
 [Jekyll]: http://jekyllrb.com/
 [Rack::Jekyll]: https://github.com/adaoraul/rack-jekyll
 [custom Heroku buildpack]: https://github.com/mattmanning/heroku-buildpack-ruby-jekyll
+[GitHub Pages]: http://pages.github.com/
+[a few plugins]: https://github.com/jbhannah/jbhannah.net/tree/master/_plugins
+[Octopress]: http://octopress.org/
 [Rack::TryStatic works just fine]: http://mwmanning.com/2011/12/04/Jekyll-on-Heroku-Part-2.html
 [Heroku's Ruby buildpack]: https://github.com/heroku/heroku-buildpack-ruby/blob/master/lib/language_pack/ruby.rb#L573
 [Rails asset pipeline]: http://guides.rubyonrails.org/asset_pipeline.html
