@@ -1,3 +1,4 @@
+require 'rack/contrib/static_cache'
 require 'rack/contrib/try_static'
 require 'rack/contrib/not_found'
 require 'rack/rewrite'
@@ -11,9 +12,13 @@ use Rack::Rewrite do
   }
 end
 
+use Rack::StaticCache,
+  :urls => %w[/assets /favicon.ico],
+  :root => "_site"
+
 use Rack::TryStatic,
-  :root => "_site",
   :urls => %w[/],
+  :root => "_site",
   :try  => ['index.html', '/index.html']
 
 run Rack::NotFound.new('_site/404.html')
