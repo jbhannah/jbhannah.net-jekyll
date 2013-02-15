@@ -32,6 +32,16 @@ compiling Jekyll pages:
 
 {% gist 4551206 Rakefile %}
 
+When Heroku builds the application slug, it installs gems into the
+`vendor` directory. This can cause some strange results, most commonly
+[Jekyll test posts showing up as published][]. The fix is, simply, to
+[exclude the `vendor` directory in your _config.yml][]. As a good
+general practice, make sure to build your site locally before deploying
+it to make sure no files are being included in the `_site` directory
+that you don't want there (READMEs, server configuration files, &c.),
+but this is a quirk of the Heroku environment that in most cases won't
+happen locally and needs to be accounted for.
+
 ## Serving from Rack
 
 Once they've been compiled by Heroku, the static files are served up by
@@ -58,6 +68,10 @@ compiling Compass and CoffeeScript files as part of Jekyll's own build
 process. I've updated this post and its associated Gist to reflect this
 by removing the separate commands for and references to Compass.
 
+**Updated 2013-02-14:** Added a hint about how to keep Jekyll test posts
+from appearing in a deployed site on Heroku. Thanks to [@fulligin][] for
+reminding me of it.
+
 [Heroku]: http://www.heroku.com/
 [Jekyll]: http://jekyllrb.com/
 [Rack::Jekyll]: https://github.com/adaoraul/rack-jekyll
@@ -70,6 +84,8 @@ by removing the separate commands for and references to Compass.
 [Rails asset pipeline]: http://guides.rubyonrails.org/asset_pipeline.html
 [CoffeeScript]: http://coffeescript.org/
 [Compass]: http://compass-style.org/
+[Jekyll test posts showing up as published]: http://stackoverflow.com/questions/12241403/jekyll-on-heroku-listing-additional-internal-posts-i-havent-created
+[exclude the `vendor` directory in your _config.yml]: https://github.com/jbhannah/jbhannah.net/commit/ff5bf39e8a7e4ebc5e3031e007ee8859f97c3fb3
 [Unicorn]: http://unicorn.bogomips.org/
 [Rack::Contrib]: https://github.com/rack/rack-contrib
 [entire source of this site]: https://github.com/jbhannah/jbhannah.net
@@ -77,3 +93,4 @@ by removing the separate commands for and references to Compass.
 [Compass settings]: https://github.com/jbhannah/jbhannah.net/blob/master/compass.rb
 [Gemfile]: https://github.com/jbhannah/jbhannah.net/blob/master/Gemfile
 [`jekyll-assets`]: https://github.com/ixti/jekyll-assets
+[@fulligin]: https://twitter.com/fulligin
