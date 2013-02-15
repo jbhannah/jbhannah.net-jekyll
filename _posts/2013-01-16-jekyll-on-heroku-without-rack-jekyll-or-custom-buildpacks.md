@@ -70,7 +70,8 @@ by removing the separate commands for and references to Compass.
 
 **Updated 2013-02-14:** Added a hint about how to keep Jekyll test posts
 from appearing in a deployed site on Heroku. Thanks to [@fulligin][] for
-reminding me of it.
+reminding me of it, and Jason Mitchell for the original Stack Overflow
+answer that provided the solution.
 
 [Heroku]: http://www.heroku.com/
 [Jekyll]: http://jekyllrb.com/
