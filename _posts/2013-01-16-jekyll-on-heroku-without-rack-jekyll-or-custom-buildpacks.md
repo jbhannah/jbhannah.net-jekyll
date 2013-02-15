@@ -35,10 +35,10 @@ compiling Jekyll pages:
 When Heroku builds the application slug, it installs gems into the
 `vendor` directory. This can cause some strange results, most commonly
 [Jekyll test posts showing up as published][]. The fix is, simply, to
-[exclude the `vendor` directory in your _config.yml][]. As a good
+[exclude the `vendor` directory in your `_config.yml`][]. As a good
 general practice, make sure to build your site locally before deploying
 it to make sure no files are being included in the `_site` directory
-that you don't want there (READMEs, server configuration files, &c.),
+that you don't want there (`README`s, server configuration files, &c.),
 but this is a quirk of the Heroku environment that in most cases won't
 happen locally and needs to be accounted for.
 
