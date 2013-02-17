@@ -32,7 +32,7 @@ GEM
       liquid (~> 2.3)
       maruku (~> 0.5)
       pygments.rb (~> 0.3.2)
-    jekyll-assets (0.3.2)
+    jekyll-assets (0.3.3)
       jekyll
       sprockets (~> 2.8)
     kgio (2.8.0)
@@ -40,7 +40,7 @@ GEM
     liquid (2.4.1)
     maruku (0.6.1)
       syntax (>= 1.0.0)
-    multi_json (1.5.1)
+    multi_json (1.6.1)
     posix-spawn (0.3.6)
     pygmentize (0.0.3)
     pygments.rb (0.3.7)
