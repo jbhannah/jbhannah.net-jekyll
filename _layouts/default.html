@@ -61,10 +61,7 @@
           <nav id="social-menu">
             <ul>
               {% for s in site.social %}
-                <li id="{{ s.abbr }}"><a href="{{ s.url }}{% if s.abbr == 'gplus' and page.date %}?rel=author{% endif %}">
-                    {% capture imgpath %}social/{{ s.abbr }}.png{% endcapture %}
-                    <img src="{{ imgpath | asset_path }}" class="social-icon" alt="{{ s.name }}" title="{{ s.name }}" />
-                </a></li>
+                <li id="{{ s.abbr }}"><a class="social-icon" href="{{ s.url }}{% if s.abbr == 'gplus' and page.date %}?rel=author{% endif %}"></a></li>
               {% endfor %}
             </ul>
           </nav>

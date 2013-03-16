@@ -80,6 +80,47 @@ $footer-height: 3em;
   #social-menu {
     ul {
       @include horizontal-list(3px);
+
+      li {
+        $icon-size: 48px;
+
+        &#fb .social-icon {
+          background: url('{% asset_path social/fb.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/fb@2x.png %}', $icon-size);
+        }
+
+        &#twitter .social-icon {
+          background: url('{% asset_path social/twitter.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/twitter@2x.png %}', $icon-size);
+        }
+
+        &#linkedin .social-icon {
+          background: url('{% asset_path social/linkedin.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/linkedin@2x.png %}', $icon-size);
+        }
+
+        &#flickr .social-icon {
+          background: url('{% asset_path social/flickr.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/flickr@2x.png %}', $icon-size);
+        }
+
+        &#gh .social-icon {
+          background: url('{% asset_path social/gh.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/gh@2x.png %}', $icon-size);
+        }
+
+        &#gplus .social-icon {
+          background: url('{% asset_path social/gplus.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/gplus@2x.png %}', $icon-size);
+        }
+
+        .social-icon {
+          display: block;
+
+          width: $icon-size;
+          height: $icon-size;
+        }
+      }
     }
   }
 }
