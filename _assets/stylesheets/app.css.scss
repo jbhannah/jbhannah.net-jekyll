@@ -49,3 +49,29 @@ $footer-height: 3em;
 
 @import "compass/layout/sticky-footer";
 @include sticky-footer($footer-height);
+
+@import "compass/css3/background-size";
+// http://paulstamatiou.com/responsive-retina-blog-development-part-2
+@mixin image-2x($image, $width: auto, $height: $width) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+         only screen and (-o-min-device-pixel-ratio: 13/10),
+         only screen and (min-resolution: 120dpi) {
+    background-image: url($image);
+    @if $width != auto {
+      @include background-size($width, $height);
+    }
+  }
+}
+
+#header {
+  #avatar {
+    display: block;
+
+    $avatar-size: 190px;
+    width: $avatar-size;
+    height: $avatar-size;
+
+    background: url('{% asset_path avatar.png %}') no-repeat 0 0;
+    @include image-2x('{% asset_path avatar@2x.png %}', $avatar-size);
+  }
+}
