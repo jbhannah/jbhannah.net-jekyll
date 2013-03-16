@@ -58,12 +58,12 @@
 
           <a id="avatar" href="/"></a>
 
-          <nav id="social_menu">
+          <nav id="social-menu">
             <ul>
               {% for s in site.social %}
                 <li id="{{ s.abbr }}"><a href="{{ s.url }}{% if s.abbr == 'gplus' and page.date %}?rel=author{% endif %}">
                     {% capture imgpath %}social/{{ s.abbr }}.png{% endcapture %}
-                    <img src="{{ imgpath | asset_path }}" class="social_icon" alt="{{ s.name }}" title="{{ s.name }}" />
+                    <img src="{{ imgpath | asset_path }}" class="social-icon" alt="{{ s.name }}" title="{{ s.name }}" />
                 </a></li>
               {% endfor %}
             </ul>
