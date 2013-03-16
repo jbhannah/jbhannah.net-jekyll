@@ -45,3 +45,7 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+$footer-height: 3em;
+
+@import "compass/layout/sticky-footer";
+@include sticky-footer($footer-height);
