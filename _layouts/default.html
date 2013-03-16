@@ -55,6 +55,19 @@
             <h1>{{ site.name }}</h1>
             <h2>{{ site.nickname }}</h2>
           </hgroup>
+
+          <a href="/"><img alt="Jesse B. Hannah" title="Jesse B. Hannah" id="avatar" src="{% asset_path avatar.png %}" /></a>
+
+          <nav id="social_menu">
+            <ul>
+              {% for s in site.social %}
+                <li id="{{ s.abbr }}"><a href="{{ s.url }}{% if s.abbr == 'gplus' and page.date %}?rel=author{% endif %}">
+                    {% capture imgpath %}social/{{ s.abbr }}.png{% endcapture %}
+                    <img src="{{ imgpath | asset_path }}" class="social_icon" alt="{{ s.name }}" title="{{ s.name }}" />
+                </a></li>
+              {% endfor %}
+            </ul>
+          </nav>
         </header>
 
         <section id="content">
