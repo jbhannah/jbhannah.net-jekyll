@@ -54,17 +54,17 @@
           <hgroup id="site-title">
             <h1>{{ site.name }}</h1>
             <h2>{{ site.nickname }}</h2>
+
+            <nav id="social-menu">
+              <ul>
+                {% for s in site.social %}
+                  <li id="{{ s.abbr }}"><a class="social-icon" href="{{ s.url }}{% if s.abbr == 'gplus' and page.date %}?rel=author{% endif %}"></a></li>
+                {% endfor %}
+              </ul>
+            </nav>
           </hgroup>
 
-          <a id="avatar" href="/"></a>
-
-          <nav id="social-menu">
-            <ul>
-              {% for s in site.social %}
-                <li id="{{ s.abbr }}"><a class="social-icon" href="{{ s.url }}{% if s.abbr == 'gplus' and page.date %}?rel=author{% endif %}"></a></li>
-              {% endfor %}
-            </ul>
-          </nav>
+          <div id="avatar"><a href="/"></a></div>
         </header>
 
         <section id="content">

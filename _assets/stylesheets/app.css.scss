@@ -68,68 +68,92 @@ $footer-height: 3em;
   }
 }
 
+#root {
+  @extend .row;
+
+  #main {
+    @extend .small-12, .large-8, .large-centered, .columns;
+  }
+}
+
 #header {
+  @extend .row;
+  $avatar-size: 190px;
+
   #site-title {
+    @extend .small-12, .large-8, .push-4, .columns;
+    text-align: right;
+    height: $avatar-size;
+    position: relative;
+
     h1, h2 {
       margin-top: 0;
+    }
+
+    #social-menu {
+      position: absolute;
+      bottom: 0;
+      right: $column-gutter / 2;
+
+      ul {
+        @include horizontal-list(3px);
+        @extend .right;
+
+        li {
+          $icon-size: 48px;
+
+          &#fb .social-icon {
+            background: url('{% asset_path social/fb.png %}') no-repeat 0 0;
+            @include image-2x('{% asset_path social/fb@2x.png %}', $icon-size);
+          }
+
+          &#twitter .social-icon {
+            background: url('{% asset_path social/twitter.png %}') no-repeat 0 0;
+            @include image-2x('{% asset_path social/twitter@2x.png %}', $icon-size);
+          }
+
+          &#linkedin .social-icon {
+            background: url('{% asset_path social/linkedin.png %}') no-repeat 0 0;
+            @include image-2x('{% asset_path social/linkedin@2x.png %}', $icon-size);
+          }
+
+          &#flickr .social-icon {
+            background: url('{% asset_path social/flickr.png %}') no-repeat 0 0;
+            @include image-2x('{% asset_path social/flickr@2x.png %}', $icon-size);
+          }
+
+          &#gh .social-icon {
+            background: url('{% asset_path social/gh.png %}') no-repeat 0 0;
+            @include image-2x('{% asset_path social/gh@2x.png %}', $icon-size);
+          }
+
+          &#gplus .social-icon {
+            background: url('{% asset_path social/gplus.png %}') no-repeat 0 0;
+            @include image-2x('{% asset_path social/gplus@2x.png %}', $icon-size);
+          }
+
+          .social-icon {
+            display: block;
+
+            width: $icon-size;
+            height: $icon-size;
+          }
+        }
+      }
     }
   }
 
   #avatar {
-    display: block;
+    @extend .small-8, .large-4, .pull-8, .columns;
 
-    $avatar-size: 190px;
-    width: $avatar-size;
-    height: $avatar-size;
+    & > a {
+      display: block;
 
-    background: url('{% asset_path avatar.png %}') no-repeat 0 0;
-    @include image-2x('{% asset_path avatar@2x.png %}', $avatar-size);
-  }
+      width: $avatar-size;
+      height: $avatar-size;
 
-  #social-menu {
-    ul {
-      @include horizontal-list(3px);
-
-      li {
-        $icon-size: 48px;
-
-        &#fb .social-icon {
-          background: url('{% asset_path social/fb.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/fb@2x.png %}', $icon-size);
-        }
-
-        &#twitter .social-icon {
-          background: url('{% asset_path social/twitter.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/twitter@2x.png %}', $icon-size);
-        }
-
-        &#linkedin .social-icon {
-          background: url('{% asset_path social/linkedin.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/linkedin@2x.png %}', $icon-size);
-        }
-
-        &#flickr .social-icon {
-          background: url('{% asset_path social/flickr.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/flickr@2x.png %}', $icon-size);
-        }
-
-        &#gh .social-icon {
-          background: url('{% asset_path social/gh.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/gh@2x.png %}', $icon-size);
-        }
-
-        &#gplus .social-icon {
-          background: url('{% asset_path social/gplus.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/gplus@2x.png %}', $icon-size);
-        }
-
-        .social-icon {
-          display: block;
-
-          width: $icon-size;
-          height: $icon-size;
-        }
-      }
+      background: url('{% asset_path avatar.png %}') no-repeat 0 0;
+      @include image-2x('{% asset_path avatar@2x.png %}', $avatar-size);
     }
   }
 }
