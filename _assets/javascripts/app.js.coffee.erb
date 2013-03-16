@@ -1,4 +1,8 @@
-#= require vendor/modernizr
+#= require vendor/zepto
+#= require foundation/foundation
+#= require_directory ./foundation
+
+$.foundation
 
 $ ->
   $("a[href^=http]").each (index, element) ->
