@@ -66,6 +66,12 @@ $footer-height: 3em;
 }
 
 #header {
+  #site-title {
+    h1, h2 {
+      margin-top: 0;
+    }
+  }
+
   #avatar {
     display: block;
 
