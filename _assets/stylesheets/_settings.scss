@@ -15,9 +15,9 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: #eee;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Droid Serif", "Georgia", "Times New Roman", serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -85,7 +85,7 @@
 //
 
 // We use these to control header font styles
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: $body-font-family;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -125,7 +125,7 @@
 
 // We use these to style <code> tags
 // $code-color: darken($alert-color, 15%);
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
+$code-font-family: "Droid Sans Mono", "Andale Mono", "Lucida Console", monospace;
 // $code-font-weight: bold;
 
 // We use these to style anchors
