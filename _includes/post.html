@@ -6,6 +6,7 @@
       <time datetime="{% if post %}{{ post.date | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}"{% unless post %} pubdate{% endunless %}>
         {% if post %}{{ post.date | date_to_long_string }}{% else %}{{ page.date | date_to_long_string }}{% endif %}
       </time>
+
       {% if post %}
       –
       <a href="{{ post.url }}#disqus_thread">Comments</a>
@@ -16,12 +17,13 @@
   </header>
 
   <section class="post_content">
-{% if post %}
-{{ post.content | excerpt }}
-{% else %}
-{{ content }}
-{% endif %}
+    {% if post %}
+    {{ post.content | excerpt }}
+    {% else %}
+    {{ content }}
+    {% endif %}
   </section>
+
   {% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
   {% if excerpted == 'true' %}<footer><p><a href="{{ post.url }}">Read more…</a></p></footer>{% endif %}
 </article>
