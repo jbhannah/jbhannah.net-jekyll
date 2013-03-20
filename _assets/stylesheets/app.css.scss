@@ -75,6 +75,7 @@ $footer-height: 3em;
     @extend .small-12, .large-9, .large-centered, .columns;
 
     margin-top: 2em;
+    overflow: hidden;
   }
 }
 
