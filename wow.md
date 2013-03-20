@@ -19,15 +19,6 @@ Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 [![Adarushiang][Adarushiang]](http://us.battle.net/wow/en/character/Earthen Ring/Adarushiang/)
 [![Adarugarak][Adarugarak]](http://us.battle.net/wow/en/character/Earthen Ring/Adarugarak/)
 
-Emerald Dream-US (RP-PVP)<br />
-[![Jinney][Jinney]](http://us.battle.net/wow/en/character/Emerald Dream/Jinney/)
-[![Vqshorkhas][Vqshorkhas]](http://us.battle.net/wow/en/character/Emerald Dream/Vqshorkhas/)
-[![Freena][Freena]](http://us.battle.net/wow/en/character/Emerald Dream/Freena/)
-[![Kaelivia][Kaelivia]](http://us.battle.net/wow/en/character/Emerald Dream/Kaelivia/)
-[![Zhiliao][Zhiliao]](http://us.battle.net/wow/en/character/Emerald Dream/Zhiliao/)
-[![Sophylaha][Sophylaha]](http://us.battle.net/wow/en/character/Emerald Dream/Sophylaha/)
-[![Zivaliah][Zivaliah]](http://us.battle.net/wow/en/character/Emerald Dream/Zivaliah/)
-
 Ravenholdt-US (RP-PVP)<br />
 [![Adarysong][Adarysong-RH]](http://us.battle.net/wow/en/character/Ravenholdt/Adarysong/)
 
@@ -45,10 +36,3 @@ Ravenholdt-US (RP-PVP)<br />
 [Adarysong-ER]: http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarysong.png
 [Adarysong-RH]: http://bestsigs-wow-cacher.herokuapp.com/us/Ravenholdt/Adarysong.png
 [Adarystus]:    http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarystus.png
-[Freena]:       http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Freena.png
-[Jinney]:       http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Jinney.png
-[Kaelivia]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Kaelivia.png
-[Sophylaha]:    http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Sophylaha.png
-[Vqshorkhas]:   http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Vqshorkhas.png
-[Zhiliao]:      http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Zhiliao.png
-[Zivaliah]:     http://bestsigs-wow-cacher.herokuapp.com/us/Emerald%20Dream/Zivaliah.png
