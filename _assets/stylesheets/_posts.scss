@@ -3,11 +3,11 @@
     @extend .subheader;
   }
 
-  .gist {
-    table {
-      background: none;
-      border: none;
-      margin-bottom: 0;
+  .social_share {
+    margin-bottom: 1em;
+
+    div, iframe {
+      vertical-align: middle !important;
     }
   }
 }
