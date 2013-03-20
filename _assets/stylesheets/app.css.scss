@@ -72,7 +72,7 @@ $footer-height: 3em;
   @extend .row;
 
   #main {
-    @extend .small-12, .large-8, .large-centered, .columns;
+    @extend .small-12, .large-9, .large-centered, .columns;
   }
 }
 
@@ -85,6 +85,11 @@ $footer-height: 3em;
 
     & > a {
       display: block;
+      margin: 0 auto;
+
+      @media #{$small} {
+        margin: 0;
+      }
 
       width: $avatar-size;
       height: $avatar-size;
@@ -96,7 +101,11 @@ $footer-height: 3em;
 
   #site-title {
     @extend .large-8, .columns;
-    text-align: right;
+    text-align: center;
+
+    @media #{$small} {
+      text-align: right;
+    }
 
     h1, h2 {
       margin-top: 0;
@@ -109,8 +118,26 @@ $footer-height: 3em;
     ul {
       @include horizontal-list(3px);
 
+      overflow: visible;
+      float: left;
+      position: relative;
+      left: 50%;
+
+      @media #{$small} {
+        position: static;
+        float: none;
+        left: 0;
+      }
+
       li {
         $icon-size: 48px;
+
+        position: relative;
+        right: 50%;
+
+        @media #{$small} {
+          position: static;
+        }
 
         &#fb .social-icon {
           background: url('{% asset_path social/fb.png %}') no-repeat 0 0;
