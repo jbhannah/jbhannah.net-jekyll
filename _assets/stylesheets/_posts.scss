@@ -6,4 +6,8 @@
       vertical-align: middle !important;
     }
   }
+
+  .post_meta {
+    @extend .panel;
+  }
 }
