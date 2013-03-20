@@ -121,6 +121,8 @@ $footer-height: 3em;
   nav {
     @extend .large-6, .columns;
 
+    margin-bottom: 1em;
+
     ul {
       overflow: visible !important;
       float: left;
