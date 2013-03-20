@@ -57,7 +57,9 @@
             <h1>{{ site.name }}</h1>
             <h2>{{ site.nickname }}</h2>
           </hgroup>
+        </header>
 
+        <nav id="menu">
           <nav id="social-menu">
             <ul>
               {% for s in site.social %}
@@ -65,7 +67,13 @@
               {% endfor %}
             </ul>
           </nav>
-        </header>
+
+          <nav id="site-menu">
+            <ul>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </nav>
+        </nav>
 
         <section id="content">
           {{ content }}
