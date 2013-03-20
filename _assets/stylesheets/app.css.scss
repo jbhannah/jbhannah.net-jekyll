@@ -207,8 +207,14 @@ $footer-height: 3em;
   }
 }
 
+#content {
+  h1, h2, h3, h4, h5, h6 {
+    @extend .subheader;
+  }
+}
+
 #footer {
-  font-size: smaller;
+  font-size: 0.7em;
   text-align: center;
 
   p {
