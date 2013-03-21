@@ -31,7 +31,8 @@ retina-friendly layout ([with inspiration from Paul Stamatiou][stammy])
 built on [ZURB Foundation][zurb] using SASS. While previous iterations
 had lived on shared hosts or virtual private servers, the Jekyll-based
 version runs on Heroku (but is still host-agnostic). I've documented my
-process for [hosting a Jekyll-based site on Heroku][jekyll-heroku].
+process for [hosting a Jekyll-based site on Heroku][jekyll-heroku], and
+the entirety of this site's code is [available on GitHub][jbh-gh].
 
 (current screenshots)
 
@@ -60,4 +61,5 @@ code from being fully semantic.
 [stammy]: http://paulstamatiou.com/responsive-retina-blog-development-part-2
 [zurb]: http://foundation.zurb.com/
 [jekyll-heroku]: {% post_url 2013-01-16-jekyll-on-heroku-without-rack-jekyll-or-custom-buildpacks %}
+[jbh-gh]: https://github.com/jbhannah/jbhannah.net
 [activeG]: http://www.activeg.com/
