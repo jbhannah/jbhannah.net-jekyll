@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Portfolio
+meta_tags: false
 ---
 
 # Portfolio
@@ -12,28 +13,32 @@ been of roughly equal importance to my development experience, both
 professionally and as a hobbyist, and being well-rounded influences my
 approach to each of the three aspects of development.
 
-## jbhannah.net (2012)
+## jbhannah.net (2007-)
 
 [You're looking at it now][jbhannah.net]. My homepage has gone through
 numerous iterations over the years, often being based on WordPress,
-once on Drupal, and on Ruby on Rails for a time. The current,
-Jekyll-based version first went live in September 2012.
+once on Drupal, and on Ruby on Rails for a time. Hosting the site on
+Drupal with lighttpd helped me learn regular expressions, and I devised
+a way of enabling [clean URLs on a multisite Drupal installation on
+lighttpd][drupal-lighty], which has been referenced from multiple
+discussions on Drupal installation and configuration.
 
 (old screenshots)
 
-In March 2013 it was updated with a responsive, retina-friendly layout
-([with inspiration][stammy] from Paul Stamatiou) built on [ZURB
-Foundation][zurb] using SASS. While previous iterations had lived on
-shared hosts or virtual private servers, the Jekyll-based version runs
-on Heroku (but is still host-agnostic). I've documented my process for
-[hosting a Jekyll-based site on Heroku][jekyll-heroku].
+The current, Jekyll-based version of this site first went live in
+September 2012. In March 2013 I updated it to have a responsive,
+retina-friendly layout ([with inspiration from Paul Stamatiou][stammy])
+built on [ZURB Foundation][zurb] using SASS. While previous iterations
+had lived on shared hosts or virtual private servers, the Jekyll-based
+version runs on Heroku (but is still host-agnostic). I've documented my
+process for [hosting a Jekyll-based site on Heroku][jekyll-heroku].
 
 (current screenshots)
 
-## activeG Homepage (2013)
+## activeG (2011-)
 
-My primary duties at activeG consist of Maximo configuration for the
-installation of MapEngine (including Oracle and SQL Server script
+My primary duties at [activeG][] consist of Maximo configuration for
+the installation of MapEngine (including Oracle and SQL Server script
 writing), and web design and development. One of my projects was to
 rewrite the activeG homepage to be easier to maintain and have a
 cleaner codebase, while keeping a similar design and appearance to
@@ -51,6 +56,8 @@ code from being fully semantic.
 ## thetallgrass.net (2013)
 
 [jbhannah.net]: {{ site.url }}
+[drupal-lighty]: {% post_url 2008-07-10-drupal-multisite-clean-urls-and-lighttpd %}
 [stammy]: http://paulstamatiou.com/responsive-retina-blog-development-part-2
 [zurb]: http://foundation.zurb.com/
 [jekyll-heroku]: {% post_url 2013-01-16-jekyll-on-heroku-without-rack-jekyll-or-custom-buildpacks %}
+[activeG]: http://www.activeg.com/
