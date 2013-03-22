@@ -75,7 +75,6 @@ $footer-height: 3em;
     @extend .small-12, .large-9, .large-centered, .columns;
 
     margin-top: 2em;
-    overflow: hidden;
   }
 }
 
@@ -118,6 +117,8 @@ $footer-height: 3em;
 
 #menu {
   @extend .row;
+
+  overflow: hidden;
 
   nav {
     @extend .large-6, .columns;
@@ -220,6 +221,10 @@ $footer-height: 3em;
   p {
     margin: 0;
   }
+}
+
+ul, ol {
+  margin-left: 2em;
 }
 
 @import "posts";
