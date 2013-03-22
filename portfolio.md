@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: article
 title: Portfolio
-meta_tags: false
 ---
-
-# Portfolio
 
 Most designers have mostly a graphical portfolio; mine also includes
 code and scripts, links to blog posts and GitHub in addition to
