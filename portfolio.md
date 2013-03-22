@@ -3,12 +3,8 @@ layout: article
 title: Portfolio
 ---
 
-Most designers have mostly a graphical portfolio; mine also includes
-code and scripts, links to blog posts and GitHub in addition to
-screenshots. Design, programming, and systems administration have all
-been of roughly equal importance to my development experience, both
-professionally and as a hobbyist, and being well-rounded influences my
-approach to each of the three aspects of development.
+Screenshots and snippets of code and scripts from my work and pet
+projects as a designer, developer, and sysadmin.
 
 ## jbhannah.net (2007-)
 

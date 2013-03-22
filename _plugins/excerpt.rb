@@ -1,5 +1,5 @@
 # Jekyll post excerpt and related filters, extracted from Octopress
-# 
+#
 # Originally written by Brandon Mathis
 # https://github.com/imathis/octopress/blob/master/plugins/octopress_filters.rb
 
@@ -8,6 +8,10 @@ module Jekyll
     def excerpt(input)
       if input.index(/<!--\s*more\s*-->/i)
         input.split(/<!--\s*more\s*-->/i)[0]
+      elsif input.index(/<\/p>/i)
+        input.split(/<\/p>/i)[0]
+      elsif input.index("\n\n")
+        input.split("\n\n")[0]
       else
         input
       end
