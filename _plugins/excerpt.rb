@@ -18,7 +18,7 @@ module Jekyll
     end
 
     def has_excerpt(input)
-      input =~ /<!--\s*more\s*-->/i ? true : false
+      input && (input.match(/<!--\s*more\s*-->/i) or input.match(/<\/p>/i) or input.match("\n\n"))
     end
 
     def raw_content(input)
