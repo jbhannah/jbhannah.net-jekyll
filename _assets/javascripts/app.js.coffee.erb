@@ -20,10 +20,14 @@ $ ->
 <% end %>
 
   $("a[href=#search]").click (event) =>
-    console.log "Search clicked"
     event.preventDefault()
-    $("#site-menu").toggle()
-    $("#search").toggle()
+    $("#site-menu").slideToggle =>
+      $("#search").slideToggle()
+
+  $("a[href=#site-menu]").click (event) =>
+    event.preventDefault()
+    $("#search").slideToggle =>
+      $("#site-menu").slideToggle()
 
 ((d, s, id) ->
   js = undefined
