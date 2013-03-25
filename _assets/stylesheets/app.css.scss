@@ -118,7 +118,6 @@ $footer-height: 3em;
 #menu {
   @extend .row;
 
-  font-size: emCalc(20px);
   overflow: hidden;
 
   nav {
@@ -200,6 +199,7 @@ $footer-height: 3em;
   #site-menu {
     ul {
       @include horizontal-list(5px);
+      font-size: emCalc(20px);
 
       @media #{$small} {
         float: right;
@@ -213,6 +213,14 @@ $footer-height: 3em;
 
     @media #{$small} {
       text-align: right;
+    }
+
+    form {
+      @extend .large-10, .columns;
+
+      &, & input {
+        margin-bottom: 0;
+      }
     }
   }
 }
