@@ -118,11 +118,13 @@ $footer-height: 3em;
 #menu {
   @extend .row;
 
+  font-size: emCalc(20px);
   overflow: hidden;
 
   nav {
     @extend .large-6, .columns;
 
+    text-align: center;
     margin-bottom: 1em;
 
     ul {
@@ -196,8 +198,6 @@ $footer-height: 3em;
   }
 
   #site-menu {
-    font-size: emCalc(20px);
-
     ul {
       @include horizontal-list(5px);
 
@@ -208,8 +208,12 @@ $footer-height: 3em;
   }
 
   #search {
-    @extend .large-6, .large-offset-6, .columns;
     display: none;
+    line-height: 1.6;
+
+    @media #{$small} {
+      text-align: right;
+    }
   }
 }
 

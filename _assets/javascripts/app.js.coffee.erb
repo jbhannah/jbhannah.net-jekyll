@@ -22,6 +22,7 @@ $ ->
   $("a[href=#search]").click (event) =>
     console.log "Search clicked"
     event.preventDefault()
+    $("#site-menu").toggle()
     $("#search").toggle()
 
 ((d, s, id) ->
