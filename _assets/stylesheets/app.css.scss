@@ -119,6 +119,11 @@ $footer-height: 3em;
   @extend .row;
 
   overflow: hidden;
+  height: 96px;
+
+  @media #{$small} {
+    height: auto;
+  }
 
   nav {
     @extend .large-6, .columns;
@@ -215,8 +220,12 @@ $footer-height: 3em;
       text-align: right;
     }
 
+    a {
+      font-size: emCalc(20px);
+    }
+
     form {
-      @extend .large-10, .columns;
+      @extend .large-10, .small-9, .columns;
 
       &, & input {
         margin-bottom: 0;
