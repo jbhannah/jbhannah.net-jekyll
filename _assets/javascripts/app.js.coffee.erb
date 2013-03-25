@@ -19,6 +19,11 @@ $ ->
       _gaq.push ["_trackEvent", "Outbound Links", @href, @text]
 <% end %>
 
+  $("a[href=#search]").click (event) =>
+    console.log "Search clicked"
+    event.preventDefault()
+    $("#search").toggle()
+
 ((d, s, id) ->
   js = undefined
   fjs = d.getElementsByTagName(s)[0]
