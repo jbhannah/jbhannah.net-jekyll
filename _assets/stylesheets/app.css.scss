@@ -208,6 +208,7 @@ $footer-height: 3em;
   }
 
   #search {
+    @extend .large-6, .large-offset-6, .columns;
     display: none;
   }
 }
