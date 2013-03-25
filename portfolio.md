@@ -47,7 +47,17 @@ beyond HTML, CSS, and JavaScript; using Jekyll or SASS would be too
 complicated, so those were ruled out, at the expense of keeping the
 code from being fully semantic.
 
-## thetallgrass.net (2013)
+## thetallgrass.net (2013-)
+
+The first website I ever built (and what I first learned HTML for) was
+a Pokémon website, which I launched in 2001. It went through a few
+different versions over the next few years, and the last of those
+(2004-2005) was my first time building a website in PHP.
+[thetallgrass.net][] is in part a Rails-based relaunch of that website,
+while also aiming to be the most modern fan site, database, and
+community on a subject where most sites are still stuck in the early
+2000s. It is [fully open-source and available on GitHub][ttg-gh], and
+is under active development for an October 2013 launch.
 
 [jbhannah.net]: {{ site.url }}
 [drupal-lighty]: {% post_url 2008-07-10-drupal-multisite-clean-urls-and-lighttpd %}
@@ -56,3 +66,5 @@ code from being fully semantic.
 [jekyll-heroku]: {% post_url 2013-01-16-jekyll-on-heroku-without-rack-jekyll-or-custom-buildpacks %}
 [jbh-gh]: https://github.com/jbhannah/jbhannah.net
 [activeG]: http://www.activeg.com/
+[thetallgrass.net]: http://thetallgrass.net/
+[ttg-gh]: https://github.com/thetallgrassnet/thetallgrass.net
