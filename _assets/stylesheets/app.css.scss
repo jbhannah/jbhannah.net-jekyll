@@ -238,6 +238,7 @@ $footer-height: 3em;
   @extend .large-10, .large-centered, .columns;
 
   display: none;
+  padding-bottom: 1em;
   margin-bottom: 1em;
 
   border-bottom: 1px solid gray;
