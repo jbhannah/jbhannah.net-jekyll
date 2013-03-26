@@ -240,10 +240,12 @@ $footer-height: 3em;
   display: none;
   margin-bottom: 1em;
 
+  border-bottom: 1px solid gray;
+
   .st-result {
     .title {
       @extend .subheader;
-      font-size: emCalc(20px);
+      font-size: emCalc(16px);
     }
   }
 }
