@@ -225,11 +225,25 @@ $footer-height: 3em;
     }
 
     form {
-      @extend .large-10, .small-9, .columns;
+      @extend .small-9, .columns;
 
       &, & input {
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+#st-results-container {
+  @extend .large-10, .large-centered, .columns;
+
+  display: none;
+  margin-bottom: 1em;
+
+  .st-result {
+    .title {
+      @extend .subheader;
+      font-size: emCalc(20px);
     }
   }
 }
