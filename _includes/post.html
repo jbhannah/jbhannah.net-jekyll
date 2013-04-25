@@ -1,27 +1,36 @@
 <article class="post">
   <header class="post_header">
     <h1 class="post_title">{% if post %}<a href="{{ post.url }}">{{ post.title }}</a>{% else %}{{ page.title }}{% endif %}</h1>
-    <div class="post_meta">
-      Published on
-      <time datetime="{% if post %}{{ post.date | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}"{% unless post %} pubdate{% endunless %}>
-        {% if post %}{{ post.date | date_to_long_string }}{% else %}{{ page.date | date_to_long_string }}{% endif %}
-      </time>
-      {% if post %}
-      –
-      <a href="{{ post.url }}#disqus_thread">Comments</a>
-      {% endif %}
-    </div>
-
-    {% include social.html %}
   </header>
 
   <section class="post_content">
-{% if post %}
-{{ post.content | excerpt }}
-{% else %}
-{{ content }}
-{% endif %}
+    {% if post %}
+    {{ post.content | excerpt }}
+    {% else %}
+    {{ content }}
+    {% endif %}
   </section>
-  {% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
-  {% if excerpted == 'true' %}<footer><p><a href="{{ post.url }}">Read more…</a></p></footer>{% endif %}
+
+  <footer class="post_footer">
+    {% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
+    {% if excerpted == 'true' %}
+      <p><a href="{{ post.url }}">Read more…</a></p>
+    {% endif %}
+
+    <section class="post_meta">
+      <p>
+        Published on
+        <time datetime="{% if post %}{{ post.date | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}"{% unless post %} pubdate{% endunless %}>
+          {% if post %}{{ post.date | date_to_long_string }}{% else %}{{ page.date | date_to_long_string }}{% endif %}</time>.
+
+        {% if post %}
+        <a href="{{ post.url }}#disqus_thread">Comments</a>.
+        {% else %}
+        <a href="{{ post.url }}">Permalink</a>.
+        {% endif %}
+      </p>
+
+      {% include social.html %}
+    </section>
+  </footer>
 </article>

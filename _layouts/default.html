@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    {% capture description %}{{ content | raw_content | excerpt | strip_html | newline_to_br | replace: '<br />', ' ' | strip_newlines | condense_spaces | truncate: 250 }}{% endcapture %}
+
+    {% capture description %}{{ page.content | markdownify | raw_content | excerpt | strip_html | newline_to_br | replace: '<br />', ' ' | strip_newlines | condense_spaces | truncate: 250 }}{% endcapture %}
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
     {% unless page.meta_tags == false %}
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ description }}" />
@@ -14,22 +19,17 @@
     <meta property="og:title"        content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
     <meta property="og:description"  content="{{ description }}" />
     {% endunless %}
+
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
-    <link href="{% asset_path screen.css %}" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="{% asset_path print.css %}" media="print" rel="stylesheet" type="text/css" />
-    <!--[if lt IE 8]>
-      <link href="{% asset_path ie.css %}" media="screen, projection" rel="stylesheet" type="text/css" />
-    <![endif]-->
-
+    {% stylesheet app %}
     <link rel="alternate" type="application/atom+xml" title="Blog Atom feed" href="{{ site.url }}/blog/atom.xml" />
 
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-    {% javascript script %}
-    {% if site.url == site.prod_url %}
+    {% javascript vendor/custom.modernizr.js %}
     <script type="text/javascript">
+      var disqus_shortname = 'jbhannah{% unless site.url == site.prod_url %}-devel{% endunless %}';
+
+      {% if site.url == site.prod_url %}
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34516698-1']);
       _gaq.push(['_trackPageview']);
@@ -39,8 +39,8 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+      {% endif %}
     </script>
-    {% endif %}
   </head>
 
   <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
@@ -51,30 +51,59 @@
 
       <div id="main">
         <header id="header">
-          <hgroup id="site_title">
-            <h1>{{ site.name }}</h1>
+          <div id="avatar"><a href="{{ site.url }}"></a></div>
+
+          <hgroup id="site-title">
+            <h1><a href="{{ site.url }}">{{ site.name }}</a></h1>
             <h2>{{ site.nickname }}</h2>
           </hgroup>
         </header>
 
+        <nav id="menu">
+          <nav id="social-menu">
+            <ul>
+              {% for s in site.social %}
+                <li id="{{ s.abbr }}"><a class="social-icon" href="{{ s.url }}{% if s.abbr == 'gplus' and page.date %}?rel=author{% endif %}"></a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+          <nav id="site-menu">
+            <ul>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="#search">Search</a></li>
+            </ul>
+          </nav>
+
+          <nav id="search">
+            <form>
+              <input type="search" placeholder="Search" id="st-search-input" />
+            </form>
+            <a href="#site-menu">Close</a>
+          </nav>
+        </nav>
+
+        <div id="st-results-container">Type your query and hit enter. Results will appear here.</div>
+
         <section id="content">
           {{ content }}
         </section>
-
       </div>
-
-      {% include sidebar.html %}
 
       <div id="root_footer"></div>
     </div>
 
-    <footer id="footer">
+    <footer id="footer"><p>
       Copyright © {{ site.time | date: "%Y" }}
       <span id="name"{% if page.body_class == 'index' %} itemprop="name"{% endif %}>
         <a{% if page.body_class == 'index' %} itemprop="url"{% endif %} href="{{ site.url }}">{{ site.name }}</a></span>.
       <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">Some Rights Reserved</a>.<br />
-      Powered by <a href="http://www.heroku.com/">Heroku</a> and <a href="http://jekyllrb.com/">Jekyll</a>.
-      <a href="https://github.com/jbhannah/jbhannah.net">Source code on GitHub</a>.
-    </footer>
+      Powered by <a href="http://www.heroku.com/">Heroku</a>, <a href="http://swiftype.com?ref=pb">Swiftype</a>,
+      <a href="http://jekyllrb.com/">Jekyll</a>, and <a href="https://github.com/jbhannah/jbhannah.net">GitHub</a>.
+    </p></footer>
+
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    {% javascript app %}
   </body>
 </html>

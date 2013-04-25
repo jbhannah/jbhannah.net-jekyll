@@ -1,22 +1,22 @@
 code {
   font-size: smaller;
-  background: #f8f8ff;
-  padding: 0.1em;
-  border: 1px #e8e8ee solid;
 }
 
 .gist {
   table {
     margin-bottom: 0;
+    border: 0;
   }
 }
 
 .highlight {
   background: none;
-  
+  margin-bottom: $paragraph-margin-bottom;
+
   pre {
     background: #f8f8ff;
     padding: 0.5em;
+    white-space: pre;
     overflow: auto;
   }
 

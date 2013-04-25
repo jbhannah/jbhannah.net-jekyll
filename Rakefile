@@ -38,6 +38,6 @@ end
 
 desc 'Start Jekyll preview server'
 task :start do
-  sh "rm -rf _site"
+  sh "rm -rf _site/*"
   exec "bundle exec foreman start -c jekyll=1"
 end

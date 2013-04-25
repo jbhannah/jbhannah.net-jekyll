@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: article
 title: World of Warcraft roster
 meta_tags: false
 ---
-
-# {{ page.title }}
 
 Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 [![Adarystus][Adarystus]](http://twitter.com/Adarystus)

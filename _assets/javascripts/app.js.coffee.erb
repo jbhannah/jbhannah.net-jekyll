@@ -1,4 +1,9 @@
-#= require vendor/modernizr
+#= require foundation/foundation
+#= require_directory ./foundation
+#= require vendor/jquery.ba-hashchange.js
+#= require vendor/jquery.swiftype.search.js
+
+$(document).foundation()
 
 $ ->
   $("a[href^=http]").each (index, element) ->
@@ -15,6 +20,24 @@ $ ->
     .click =>
       _gaq.push ["_trackEvent", "Outbound Links", @href, @text]
 <% end %>
+
+  $("a[href=#search]").on 'click', (event) =>
+    event.preventDefault()
+
+    $("#st-search-input").swiftypeSearch
+      resultContainingElement: "#st-results-container"
+      engineKey: "ijn1crr9z7TnpjnNMiS1"
+
+    $("#st-results-container").show()
+    $("#site-menu").hide 0, ->
+      $("#search").fadeIn 200
+
+    $("a[href=#site-menu]").on 'click', (event) =>
+      event.preventDefault()
+
+      $("#st-results-container").hide()
+      $("#search").hide 0, ->
+        $("#site-menu").fadeIn 200
 
 ((d, s, id) ->
   js = undefined

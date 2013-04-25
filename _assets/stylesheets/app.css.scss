@@ -1,0 +1,274 @@
+//= require normalize
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/foundation-global"; // *always required
+// @import "foundation/components/global"; // *always required
+// @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+$footer-height: 3em;
+
+@import "compass/layout/sticky-footer";
+@include sticky-footer($footer-height);
+
+@import "compass/typography/lists/horizontal-list";
+
+@import "compass/css3/background-size";
+// http://paulstamatiou.com/responsive-retina-blog-development-part-2
+@mixin image-2x($image, $width: auto, $height: $width) {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+         only screen and (-o-min-device-pixel-ratio: 13/10),
+         only screen and (min-resolution: 120dpi) {
+    background-image: url($image);
+    @if $width != auto {
+      @include background-size($width, $height);
+    }
+  }
+}
+
+#root {
+  @extend .row;
+
+  #main {
+    @extend .small-12, .large-9, .large-centered, .columns;
+
+    margin-top: 2em;
+  }
+}
+
+#header {
+  @extend .row;
+  $avatar-size: 150px;
+
+  #avatar {
+    @extend .large-4, .columns;
+
+    & > a {
+      display: block;
+      margin: 0 auto;
+
+      @media #{$small} {
+        margin: 0;
+      }
+
+      width: $avatar-size;
+      height: $avatar-size;
+
+      background: url('{% asset_path avatar.png %}') no-repeat 0 0;
+      @include image-2x('{% asset_path avatar@2x.png %}', $avatar-size);
+    }
+  }
+
+  #site-title {
+    @extend .large-8, .columns;
+    text-align: center;
+
+    @media #{$small} {
+      text-align: right;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+  }
+}
+
+#menu {
+  @extend .row;
+
+  overflow: hidden;
+  height: 96px;
+
+  @media #{$small} {
+    height: auto;
+  }
+
+  nav {
+    @extend .large-6, .columns;
+
+    text-align: center;
+    margin-bottom: 1em;
+
+    ul {
+      overflow: visible !important;
+      float: left;
+      position: relative;
+      left: 50%;
+
+      @media #{$small} {
+        position: static;
+        float: none;
+        left: 0;
+      }
+
+      li {
+        position: relative;
+        right: 50%;
+
+        @media #{$small} {
+          position: static;
+        }
+      }
+    }
+  }
+
+  #social-menu {
+    ul {
+      @include horizontal-list(3px);
+
+      li {
+        $icon-size: 32px;
+
+        .social-icon {
+          display: block;
+
+          width: $icon-size;
+          height: $icon-size;
+        }
+
+        &#fb .social-icon {
+          background: url('{% asset_path social/fb.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/fb@2x.png %}', $icon-size);
+        }
+
+        &#twitter .social-icon {
+          background: url('{% asset_path social/twitter.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/twitter@2x.png %}', $icon-size);
+        }
+
+        &#linkedin .social-icon {
+          background: url('{% asset_path social/linkedin.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/linkedin@2x.png %}', $icon-size);
+        }
+
+        &#flickr .social-icon {
+          background: url('{% asset_path social/flickr.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/flickr@2x.png %}', $icon-size);
+        }
+
+        &#gh .social-icon {
+          background: url('{% asset_path social/gh.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/gh@2x.png %}', $icon-size);
+        }
+
+        &#gplus .social-icon {
+          background: url('{% asset_path social/gplus.png %}') no-repeat 0 0;
+          @include image-2x('{% asset_path social/gplus@2x.png %}', $icon-size);
+        }
+      }
+    }
+  }
+
+  #site-menu {
+    ul {
+      @include horizontal-list(5px);
+      font-size: emCalc(20px);
+
+      @media #{$small} {
+        float: right;
+      }
+    }
+  }
+
+  #search {
+    display: none;
+    line-height: 1.6;
+
+    @media #{$small} {
+      text-align: right;
+    }
+
+    a {
+      font-size: emCalc(20px);
+    }
+
+    form {
+      @extend .small-9, .columns;
+
+      &, & input {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#st-results-container {
+  @extend .large-10, .large-centered, .columns;
+
+  display: none;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+
+  border-bottom: 1px solid gray;
+
+  .st-result {
+    .title {
+      @extend .subheader;
+      font-size: emCalc(16px);
+    }
+  }
+}
+
+#content {
+  h1, h2, h3, h4, h5, h6 {
+    @extend .subheader;
+  }
+}
+
+#footer {
+  font-size: 0.7em;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+ul, ol {
+  margin-left: 2em;
+}
+
+@import "posts";
+@import "code";

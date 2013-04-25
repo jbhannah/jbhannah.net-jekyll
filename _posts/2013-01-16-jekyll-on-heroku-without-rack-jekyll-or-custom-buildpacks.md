@@ -35,7 +35,7 @@ compiling Jekyll pages:
 When Heroku builds the application slug, it installs gems into the
 `vendor` directory. This can cause some strange results, most commonly
 [Jekyll test posts showing up as published][]. The fix is, simply, to
-[exclude the `vendor` directory in your `_config.yml`][]. As a good
+[exclude the `vendor` directory in your `_config.yml`][excl]. As a good
 general practice, make sure to build your site locally before deploying
 it to make sure no files are being included in the `_site` directory
 that you don't want there (`README`s, server configuration files, &c.),
@@ -45,7 +45,7 @@ happen locally and needs to be accounted for.
 ## Serving from Rack
 
 Once they've been compiled by Heroku, the static files are served up by
-[Unicorn][] and a pair of [Rack::Contrib][] modules: `try_static` and
+[Puma][] and a pair of [Rack::Contrib][] modules: `try_static` and
 `not_found`. `try_static` lets Rack serve up static HTML files and
 tries to match specified paths, and `not_found` tells Rack to serve a
 specific file in the event of a 404 error. Add `rack_contrib` to the
@@ -54,16 +54,15 @@ specific file in the event of a 404 error. Add `rack_contrib` to the
 {% gist 4551206 config.ru %}
 
 Finally, create a `Procfile` with a web task for Heroku to run your
-server of choice, such as Unicorn (assuming you have added `unicorn` to
-your `Gemfile` and configured it appropriately):
+server of choice, such as Puma (assuming you have added `puma` to
+your `Gemfile`):
 
 {% gist 4551206 Procfile %}
 
 The [entire source of this site][] is available on GitHub, so you can
-see there how I've [configured Unicorn][], my [Gemfile][], &c., as a
-basis for your own deployment.
+see my [Gemfile][] &c. as a basis for your own deployment.
 
-**Updated 2013-02-06:** I'm now using [`jekyll-assets`][] to handle
+**Updated 2013-02-06:** I'm now using [jekyll-assets][] to handle
 compiling Compass and CoffeeScript files as part of Jekyll's own build
 process. I've updated this post and its associated Gist to reflect this
 by removing the separate commands for and references to Compass.
@@ -86,12 +85,11 @@ answer that provided the solution.
 [CoffeeScript]: http://coffeescript.org/
 [Compass]: http://compass-style.org/
 [Jekyll test posts showing up as published]: http://stackoverflow.com/questions/12241403/jekyll-on-heroku-listing-additional-internal-posts-i-havent-created
-[exclude the `vendor` directory in your _config.yml]: https://github.com/jbhannah/jbhannah.net/commit/ff5bf39e8a7e4ebc5e3031e007ee8859f97c3fb3
-[Unicorn]: http://unicorn.bogomips.org/
+[excl]: https://github.com/jbhannah/jbhannah.net/commit/ff5bf39e8a7e4ebc5e3031e007ee8859f97c3fb3
+[Puma]: http://puma.io/
 [Rack::Contrib]: https://github.com/rack/rack-contrib
 [entire source of this site]: https://github.com/jbhannah/jbhannah.net
-[configured Unicorn]: https://github.com/jbhannah/jbhannah.net/blob/master/unicorn.rb
 [Compass settings]: https://github.com/jbhannah/jbhannah.net/blob/master/compass.rb
 [Gemfile]: https://github.com/jbhannah/jbhannah.net/blob/master/Gemfile
-[`jekyll-assets`]: https://github.com/ixti/jekyll-assets
+[jekyll-assets]: https://github.com/ixti/jekyll-assets
 [@fulligin]: https://twitter.com/fulligin
