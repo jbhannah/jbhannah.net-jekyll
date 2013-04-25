@@ -5,7 +5,7 @@ published: true
 ---
 
 Something I'm kinda surprised I haven't written more about is the
-only [new toy][] that I've really at all managed to afford all semester.
+only [new toy][] that I've really at all managed to afford all semester.
 I got it to develop for, and am using it for that (hopefully I'll have
 the app I'm working on now up by the start of next semester), but what
 I'm surprised at is how easily it's integrated itself into my everyday
