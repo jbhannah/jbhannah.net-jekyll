@@ -1,7 +1,7 @@
 namespace :assets do
   desc 'Precompile assets'
   task :precompile do
-    sh "LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll"
+    sh "bundle exec jekyll"
   end
 end
 
