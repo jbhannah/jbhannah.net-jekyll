@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - 2.0.0
+env:
+  global:
+    - secure: |-
+        VpsbfAC9COJnNiP9i+AQQ7eVfs9i993np4iqV/51FlqJuW+ScNoDPErn7sxQ
+        XOnzggiXOAIin3zmwm8TKZHghuINHrIZV2OxziGzuto6EZRzHL2CbZF2ZOIn
+        DjTRiqEBp1TahRHoH6ieOL5bPxQBQgWY4cvF1tF2a+sVUESzpio=
+    - secure: |-
+        PwfxBGNRZ+1ysFPQuEbxcC9ntBTI0vJjAJYVbKxBiHk5eYvuyfmB62XVErBA
+        rqTB1mAHHDe6czZHm3gjWYp9w+lvxY+MZDn6eosLLLbZxnhdH/xz+4KpofUp
+        vuELajTCSgKRHHGvFKQ96IyoSS5MrQsWzwmODVAkxeRJbVXAtXY=
