@@ -13,8 +13,8 @@ Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 [![Adarenlink][Adarenlink]](http://us.battle.net/wow/en/character/Earthen Ring/Adarenlink/)
 [![Adarothunn][Adarothunn]](http://us.battle.net/wow/en/character/Earthen Ring/Adarothunn/)
 [![Adarkzarnlek][Adarkzarnlek]](http://us.battle.net/wow/en/character/Earthen Ring/Adarkzarnlek/)
-[![Adarrigh][Adarrigh]](http://us.battle.net/wow/en/character/Earthen Ring/Adarrigh/)
 [![Adarushiang][Adarushiang]](http://us.battle.net/wow/en/character/Earthen Ring/Adarushiang/)
+[![Adarrigh][Adarrigh]](http://us.battle.net/wow/en/character/Earthen Ring/Adarrigh/)
 [![Adarugarak][Adarugarak]](http://us.battle.net/wow/en/character/Earthen Ring/Adarugarak/)
 
 Ravenholdt-US (RP-PVP)<br />
