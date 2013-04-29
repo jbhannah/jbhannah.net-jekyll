@@ -13,7 +13,6 @@ gem "compass", "~> 0.12.2"
 gem "zurb-foundation", "~> 4.1.5"
 gem "coffee-script", "~> 2.2.0"
 gem "uglifier", "~> 1.3.0"
-gem "jekyll-press", "~> 0.2.0"
 
 gem "rack-contrib", "~> 1.1.0"
 gem "rack-rewrite", "~> 1.3.3"
