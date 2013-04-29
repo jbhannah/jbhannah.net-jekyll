@@ -8,17 +8,13 @@ module Jekyll
     def excerpt(input)
       if input.index(/<!--\s*more\s*-->/i)
         input.split(/<!--\s*more\s*-->/i)[0]
-      elsif input.index(/<\/p>/i)
-        input.split(/<\/p>/i)[0]
-      elsif input.index("\n\n")
-        input.split("\n\n")[0]
       else
         input
       end
     end
 
     def has_excerpt(input)
-      input && (input.match(/<!--\s*more\s*-->/i) or input.match(/<\/p>/i) or input.match("\n\n"))
+      !input.match(/<!--\s*more\s*-->/i).to_a.empty?
     end
 
     def raw_content(input)

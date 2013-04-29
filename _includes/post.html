@@ -12,9 +12,11 @@
   </section>
 
   <footer class="post_footer" data-swiftype-index="false">
-    {% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
-    {% if excerpted == 'true' %}
-      <p><a href="{{ post.url }}">Read more…</a></p>
+    {% if post %}
+      {% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
+      {% if excerpted == 'true' %}
+        <p><a href="{{ post.url }}">Read more…</a></p>
+      {% endif %}
     {% endif %}
 
     <section class="post_meta">
@@ -26,7 +28,7 @@
         {% if post %}
         <a href="{{ post.url }}#disqus_thread">Comments</a>.
         {% else %}
-        <a href="{{ post.url }}">Permalink</a>.
+        <a href="{{ page.url }}">Permalink</a>.
         {% endif %}
       </p>
 
