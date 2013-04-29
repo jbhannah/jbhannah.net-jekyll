@@ -17,7 +17,7 @@ $ ->
       $(element).attr "rel", rel + "external"
 
   $("a[rel~=external]").attr("target", "_blank")
-<% if site.config['url'] == site.config['prod_url'] %>
+<% unless site.config['dev'] == true %>
     .click =>
       _gaq.push ["_trackEvent", "Outbound Links", @href, @text]
 <% end %>
