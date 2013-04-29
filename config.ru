@@ -1,4 +1,3 @@
-require 'rack/contrib/static_cache'
 require 'rack/contrib/try_static'
 require 'rack/contrib/not_found'
 require 'rack/rewrite'
@@ -11,10 +10,6 @@ use Rack::Rewrite do
     ENV['RACK_ENV'] == "production" && rack_env['SERVER_NAME'] != 'jbhannah.net'
   }
 end
-
-use Rack::StaticCache,
-  :urls => %w[/assets /favicon.ico],
-  :root => "_site"
 
 use Rack::TryStatic,
   :urls => %w[/],
