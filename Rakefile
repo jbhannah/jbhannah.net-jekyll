@@ -3,7 +3,8 @@ task default: "assets:precompile"
 namespace :assets do
   desc 'Precompile assets'
   task :precompile do
-    sh "bundle exec jekyll"
+    Rake::Task["clean"].invoke
+    sh "bundle exec jekyll build"
   end
 end
 
@@ -40,6 +41,11 @@ end
 
 desc 'Start Jekyll preview server'
 task :start do
+  Rake::Task["clean"].invoke
+  exec "bundle exec jekyll serve --config _config.yml,_config.dev.yml --watch"
+end
+
+desc 'Remove compiled files'
+task :clean do
   sh "rm -rf _site/*"
-  exec "bundle exec foreman start -c jekyll=1"
 end

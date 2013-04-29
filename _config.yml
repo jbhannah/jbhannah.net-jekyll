@@ -1,6 +1,4 @@
-auto: false
 url: http://jbhannah.net
-prod_url: http://jbhannah.net
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 paginate: 10
