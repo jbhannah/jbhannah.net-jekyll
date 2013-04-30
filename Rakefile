@@ -47,5 +47,5 @@ end
 
 desc 'Remove compiled files'
 task :clean do
-  sh "rm -rf _site/*"
+  sh "rm -rf #{File.dirname(__FILE__)}/_site/*"
 end
