@@ -18,6 +18,8 @@
     <meta property="og:url"          content="{{ site.url }}{% unless page.url == '/index.html' %}{{ page.url }}{% endunless %}" />
     <meta property="og:title"        content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
     <meta property="og:description"  content="{{ description }}" />
+    <meta property="st:title"        content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+    <meta property="st:published_at" content="{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}" />
     {% endunless %}
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
