@@ -19,6 +19,7 @@ Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 
 Aerie Peak-US (PvE): [Convert to Raid](http://converttoraid.com/)<br />
 [![Shensheng][Shensheng]](http://us.battle.net/wow/en/character/Aerie Peak/Shensheng/)
+[![Aureithe][Aureithe]](http://us.battle.net/wow/en/character/Aerie Peak/Aureithe/)
 [![Vqshorkhas][Vqshorkhas]](http://us.battle.net/wow/en/character/Aerie Peak/Vqshorkhas/)
 
 Ravenholdt-US (RP-PVP)<br />
@@ -38,5 +39,6 @@ Ravenholdt-US (RP-PVP)<br />
 [Adarysong-ER]: http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarysong.png
 [Adarysong-RH]: http://bestsigs-wow-cacher.herokuapp.com/us/Ravenholdt/Adarysong.png
 [Adarystus]:    http://bestsigs-wow-cacher.herokuapp.com/us/Earthen%20Ring/Adarystus.png
+[Aureithe]:     http://bestsigs-wow-cacher.herokuapp.com/us/Aerie%20Peak/Aureithe.png
 [Shensheng]:    http://bestsigs-wow-cacher.herokuapp.com/us/Aerie%20Peak/Shensheng.png
 [Vqshorkhas]:   http://bestsigs-wow-cacher.herokuapp.com/us/Aerie%20Peak/Vqshorkhas.png
