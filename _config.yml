@@ -1,7 +1,6 @@
 url: http://jbhannah.net
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
-paginate: 10
 pygments: true
 
 exclude: [config.ru, Gemfile, Gemfile.lock, jbhannah.net.sublime-project, jbhannah.net.sublime-workspace, LICENSE.txt, Procfile, Rakefile, README.md, vendor]
