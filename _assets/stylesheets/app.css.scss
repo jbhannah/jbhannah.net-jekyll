@@ -58,8 +58,8 @@ html { background: none; }
       width: $avatar-size;
       height: $avatar-size;
 
-      background: url('{% asset_path avatar.png %}') no-repeat 0 0;
-      @include image-2x('{% asset_path avatar@2x.png %}', $avatar-size);
+      background: url(asset_path("avatar.png")) no-repeat 0 0;
+      @include image-2x(asset_path("avatar@2x.png"), $avatar-size);
     }
   }
 
@@ -131,33 +131,33 @@ html { background: none; }
         }
 
         &#fb .social-icon {
-          background: url('{% asset_path social/fb.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/fb@2x.png %}', $icon-size);
+          background: url(asset_path("social/fb.png")) no-repeat 0 0;
+          @include image-2x(asset_path("social/fb@2x.png"), $icon-size);
         }
 
         &#twitter .social-icon {
-          background: url('{% asset_path social/twitter.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/twitter@2x.png %}', $icon-size);
+          background: url(asset_path("social/twitter.png")) no-repeat 0 0;
+          @include image-2x(asset_path("social/twitter@2x.png"), $icon-size);
         }
 
         &#linkedin .social-icon {
-          background: url('{% asset_path social/linkedin.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/linkedin@2x.png %}', $icon-size);
+          background: url(asset_path("social/linkedin.png")) no-repeat 0 0;
+          @include image-2x(asset_path("social/linkedin@2x.png"), $icon-size);
         }
 
         &#flickr .social-icon {
-          background: url('{% asset_path social/flickr.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/flickr@2x.png %}', $icon-size);
+          background: url(asset_path("social/flickr.png")) no-repeat 0 0;
+          @include image-2x(asset_path("social/flickr@2x.png"), $icon-size);
         }
 
         &#gh .social-icon {
-          background: url('{% asset_path social/gh.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/gh@2x.png %}', $icon-size);
+          background: url(asset_path("social/gh.png")) no-repeat 0 0;
+          @include image-2x(asset_path("social/gh@2x.png"), $icon-size);
         }
 
         &#gplus .social-icon {
-          background: url('{% asset_path social/gplus.png %}') no-repeat 0 0;
-          @include image-2x('{% asset_path social/gplus@2x.png %}', $icon-size);
+          background: url(asset_path("social/gplus.png")) no-repeat 0 0;
+          @include image-2x(asset_path("social/gplus@2x.png"), $icon-size);
         }
       }
     }
