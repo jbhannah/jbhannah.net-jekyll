@@ -17,7 +17,7 @@ use Rack::TryStatic,
   root: "_site",
   try: ['index.html', '/index.html'],
   header_rules: [
-    [["html"],  {'Content-Type' => 'text/html, charset=utf-8'}],
+    [["html"],  {'Content-Type' => 'text/html; charset=utf-8'}],
     [["css"],   {'Content-Type' => 'text/css'}],
     [["js"],    {'Content-Type' => 'text/javascript'}],
     [["png"],   {'Content-Type' => 'image/png'}],
