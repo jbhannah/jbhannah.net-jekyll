@@ -2,8 +2,6 @@
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
   <head>
-    <meta charset="utf-8" />
-
     {% capture description %}{{ page.content | markdownify | raw_content | excerpt | strip_html | newline_to_br | replace: '<br />', ' ' | strip_newlines | condense_spaces | truncate: 250 }}{% endcapture %}
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
