@@ -3,7 +3,7 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 pygments: true
 
-exclude: [config.ru, Gemfile, Gemfile.lock, jbhannah.net.sublime-project, jbhannah.net.sublime-workspace, LICENSE.txt, Procfile, Rakefile, README.md, vendor]
+exclude: [config.ru, Gemfile, Gemfile.lock, jbhannah.net.sublime-project, jbhannah.net.sublime-workspace, LICENSE.txt, newrelic.yml, Procfile, Rakefile, README.md, vendor]
 
 assets:
   compress:

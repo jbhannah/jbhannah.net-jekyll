@@ -1,0 +1,26 @@
+common: &default_settings
+  license_key: '<%= ENV["NEW_RELIC_LICENSE_KEY"] %>'
+  app_name: <%= ENV["NEW_RELIC_APP_NAME"] %>
+  monitor_mode: true
+  developer_mode: false
+  dispatcher: puma
+  browser_monitoring:
+    auto_instrument: true
+
+development:
+  <<: *default_settings
+  monitor_mode: false
+  developer_mode: true
+
+test:
+  <<: *default_settings
+  monitor_mode: false
+
+production:
+  <<: *default_settings
+  monitor_mode: true
+
+staging:
+  <<: *default_settings
+  monitor_mode: true
+  app_name: <%= ENV["NEW_RELIC_APP_NAME"] %> (Staging)

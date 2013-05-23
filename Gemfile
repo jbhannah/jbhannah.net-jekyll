@@ -20,3 +20,7 @@ gem "puma", "~> 2.0.1"
 group :development do
   gem "foreman", "~> 0.63"
 end
+
+group :production do
+  gem "newrelic_rpm"
+end
