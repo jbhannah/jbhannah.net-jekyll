@@ -11,7 +11,7 @@
 #
 #   http://www.flickr.com/services/api/flickr.photos.getSizes.html
 #
-# Medium 640 (~640px width) is the default.
+# Medium 800 (~800px width) is the default, falling back to Medium 640 or Medium depending on the available sizes.
 #
 # Requires a Flickr API key and secret set in environment variables FLICKR_API_KEY and FLICKR_API_SECRET.
 #
@@ -35,13 +35,15 @@ module Jekyll
     def initialize(tag_name, markup, tokens)
       super
       params = Shellwords.shellwords markup
-      @photo = { :id => params[0], :size => params[1] || "Medium 640", :sizes => {}, :title => "", :caption => "", :url => "", :exif => {} }
+      @photo = { :id => params[0], :size => params[1] || "Medium 800", :sizes => {}, :title => "", :caption => "", :url => "", :exif => {} }
     end
 
     def render(context)
       @photo.merge!(@@cached[photo_key] || get_photo)
 
       selected_size = @photo[:sizes][@photo[:size]]
+      selected_size ||= @photo[:sizes]["Medium 640"]
+      selected_size ||= @photo[:sizes]["Medium"]
       "<a class=\"thumbnail\" href=\"#{@photo[:url]}\"><img src=\"#{selected_size[:source]}\" title=\"#{@photo[:title]}\" alt=\"#{@photo[:caption]}\" /></a>"
     end
 
