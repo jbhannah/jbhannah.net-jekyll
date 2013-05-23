@@ -45,6 +45,7 @@ $ ->
   unless d.getElementById(id)
     js = d.createElement(s)
     js.id = id
+    js.async = true
     js.src = "https://platform.twitter.com/widgets.js"
     fjs.parentNode.insertBefore js, fjs
 ) document, "script", "twitter-wjs"
@@ -55,7 +56,8 @@ $ ->
   return  if d.getElementById(id)
   js = d.createElement(s)
   js.id = id
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"
+  js.async = true
+  js.src = "https://connect.facebook.net/en_US/all.js"
   fjs.parentNode.insertBefore js, fjs
 ) document, "script", "facebook-jssdk"
 
