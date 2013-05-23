@@ -45,7 +45,7 @@ GEM
     maruku (0.6.1)
       syntax (>= 1.0.0)
     multi_json (1.7.3)
-    newrelic_rpm (3.5.8.72)
+    newrelic_rpm (3.6.2.96)
     posix-spawn (0.3.6)
     puma (2.0.1)
       rack (>= 1.1, < 2.0)
