@@ -1,17 +1,17 @@
 # Flickr Tag
 #
 # A Jekyll plug-in for embedding Flickr photos in your Liquid templates.
-# 
-# Usage: 
-#   
+#
+# Usage:
+#
 #   {% flickr 1234567890 %}
 #   {% flickr 1234567890 "Large Square" %}
 #
 # ... where 1234567890 is the Flickr photo ID, and "Large Square" is the size label, as defined here by Flickr:
-# 
+#
 #   http://www.flickr.com/services/api/flickr.photos.getSizes.html
 #
-# Medium (~500px width) is the default.
+# Medium 640 (~640px width) is the default.
 #
 # Requires a Flickr API key and secret set in environment variables FLICKR_API_KEY and FLICKR_API_SECRET.
 #
@@ -35,7 +35,7 @@ module Jekyll
     def initialize(tag_name, markup, tokens)
       super
       params = Shellwords.shellwords markup
-      @photo = { :id => params[0], :size => params[1] || "Medium", :sizes => {}, :title => "", :caption => "", :url => "", :exif => {} }
+      @photo = { :id => params[0], :size => params[1] || "Medium 640", :sizes => {}, :title => "", :caption => "", :url => "", :exif => {} }
     end
 
     def render(context)
