@@ -39,33 +39,15 @@ $ ->
       $("#search").hide 0, ->
         $("#site-menu").fadeIn 200
 
-((d, s, id) ->
-  js = undefined
-  fjs = d.getElementsByTagName(s)[0]
-  unless d.getElementById(id)
-    js = d.createElement(s)
-    js.id = id
-    js.async = true
-    js.src = "https://platform.twitter.com/widgets.js"
-    fjs.parentNode.insertBefore js, fjs
-) document, "script", "twitter-wjs"
-
-((d, s, id) ->
-  js = undefined
-  fjs = d.getElementsByTagName(s)[0]
-  return  if d.getElementById(id)
-  js = d.createElement(s)
+load_js = (id, src) ->
+  return if document.getElementById(id)
+  fjs = document.getElementsByTagName("script")[0]
+  js = document.createElement("script")
   js.id = id
+  js.src = src
   js.async = true
-  js.src = "https://connect.facebook.net/en_US/all.js"
   fjs.parentNode.insertBefore js, fjs
-) document, "script", "facebook-jssdk"
 
-(->
-  po = document.createElement("script")
-  po.type = "text/javascript"
-  po.async = true
-  po.src = "https://apis.google.com/js/plusone.js"
-  s = document.getElementsByTagName("script")[0]
-  s.parentNode.insertBefore po, s
-)()
+load_js "twitter-wjs", "https://platform.twitter.com/widgets.js"
+load_js "facebook-jssdk", "https://connect.facebook.net/en_US/all.js"
+load_js "gplusone-js", "https://apis.google.com/js/plusone.js"
