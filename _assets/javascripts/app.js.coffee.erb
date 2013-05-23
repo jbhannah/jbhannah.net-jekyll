@@ -5,6 +5,10 @@
 
 $(document).foundation()
 
+window.fbAsyncInit = ->
+  FB.init
+    xfbml: true
+
 $ ->
   $("a[href^=http]").each (index, element) ->
     if @href.indexOf("http://" + location.hostname) is -1
