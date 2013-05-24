@@ -14,11 +14,12 @@ $footer-height: 3em;
 @import "compass/typography/lists/horizontal-list";
 
 @import "compass/css3/background-size";
+
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi)";
+
 // http://paulstamatiou.com/responsive-retina-blog-development-part-2
 @mixin image-2x($image, $width: auto, $height: $width) {
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
-         only screen and (-o-min-device-pixel-ratio: 13/10),
-         only screen and (min-resolution: 120dpi) {
+  @media #{$retina} {
     background-image: url($image);
     @if $width != auto {
       @include background-size($width, $height);
@@ -123,39 +124,39 @@ html { background: none; }
 
         .social-icon {
           display: block;
+          background: url(asset_path("social.png")) no-repeat top left;
+
+          @media #{$retina} {
+            background-image: url(asset_path("social@2x.png"));
+            @include background-size($icon-size, $icon-size);
+          }
 
           width: $icon-size;
           height: $icon-size;
         }
 
         &#fb .social-icon {
-          background: url(asset_path("social/fb.png")) no-repeat 0 0;
-          @include image-2x(asset_path("social/fb@2x.png"), $icon-size);
+          background-position: 0 0;
         }
 
         &#twitter .social-icon {
-          background: url(asset_path("social/twitter.png")) no-repeat 0 0;
-          @include image-2x(asset_path("social/twitter@2x.png"), $icon-size);
+          background-position: 0 -320px;
         }
 
         &#linkedin .social-icon {
-          background: url(asset_path("social/linkedin.png")) no-repeat 0 0;
-          @include image-2x(asset_path("social/linkedin@2x.png"), $icon-size);
+          background-position: 0 -256px;
         }
 
         &#flickr .social-icon {
-          background: url(asset_path("social/flickr.png")) no-repeat 0 0;
-          @include image-2x(asset_path("social/flickr@2x.png"), $icon-size);
+          background-position: 0 -64px;
         }
 
         &#gh .social-icon {
-          background: url(asset_path("social/gh.png")) no-repeat 0 0;
-          @include image-2x(asset_path("social/gh@2x.png"), $icon-size);
+          background-position: 0 -128px;
         }
 
         &#gplus .social-icon {
-          background: url(asset_path("social/gplus.png")) no-repeat 0 0;
-          @include image-2x(asset_path("social/gplus@2x.png"), $icon-size);
+          background-position: 0 -192px;
         }
       }
     }
