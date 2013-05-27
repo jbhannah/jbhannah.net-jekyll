@@ -7,7 +7,7 @@ gem "jekyll", "~> 1.0.2"
 gem "flickraw", "~> 0.9.6"
 gem "pygmentize", "~> 0.0.3"
 
-gem "jekyll-assets", "~> 0.5.1"
+gem "jekyll-assets", "~> 0.5.3"
 gem "compass", "~> 0.12.2"
 gem "zurb-foundation", "~> 4.1.6"
 gem "coffee-script", "~> 2.2.0"
