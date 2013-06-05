@@ -9,7 +9,7 @@ gem "pygmentize", "~> 0.0.3"
 
 gem "jekyll-assets", "~> 0.5.3"
 gem "compass", "~> 0.12.2"
-gem "zurb-foundation", "~> 4.1.6"
+gem "zurb-foundation", "~> 4.2.1"
 gem "coffee-script", "~> 2.2.0"
 gem "uglifier", "~> 2.1.1"
 
