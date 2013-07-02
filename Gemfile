@@ -15,7 +15,7 @@ gem "uglifier", "~> 2.1.1"
 
 gem "rack-contrib", "~> 1.1.0"
 gem "rack-rewrite", "~> 1.3.3"
-gem "puma", "~> 2.1.1"
+gem "puma", "~> 2.2.0"
 
 group :development do
   gem "foreman", "~> 0.63"
