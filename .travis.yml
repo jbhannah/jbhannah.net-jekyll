@@ -11,3 +11,11 @@ env:
         PwfxBGNRZ+1ysFPQuEbxcC9ntBTI0vJjAJYVbKxBiHk5eYvuyfmB62XVErBA
         rqTB1mAHHDe6czZHm3gjWYp9w+lvxY+MZDn6eosLLLbZxnhdH/xz+4KpofUp
         vuELajTCSgKRHHGvFKQ96IyoSS5MrQsWzwmODVAkxeRJbVXAtXY=
+deploy:
+  provider: heroku
+  app: fierce-ravine-4136
+  api_key:
+    secure: |-
+      DlpYsmx1a+TL1SWUPIeckRnLqveOZLRl+oc/77axqDFbVFq90TozqJ6ThByb
+      GT25S8aXbE1lX85CRN1OcBvtF++Ew3eV5HAwDBZlKo5PUyseLze+FE68HNNM
+      lt1Gwmqe1vHNo9hys9HiXYi7ZPiY3prgruhz1jjaA5j9BnlntxQ=
