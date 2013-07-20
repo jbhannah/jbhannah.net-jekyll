@@ -18,7 +18,7 @@ module Jekyll
     end
 
     def raw_content(input)
-      /<section class="post_content">(?<content>[\s\S]*?)<\/section>\s*<(footer|\/article)>/ =~ input
+      /<section class="post_content">(?<content>[\s\S]*?)<\/section>/ =~ input
       return (content.nil?) ? input : content
     end
 
