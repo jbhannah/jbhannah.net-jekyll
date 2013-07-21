@@ -19,8 +19,8 @@ Earthen Ring-US (RP): [alea iacta est](https://portal.aie-guild.org/)<br />
 
 Aerie Peak-US (PvE): [Convert to Raid](http://converttoraid.com/)<br />
 [![Shensheng][Shensheng]](http://us.battle.net/wow/en/character/Aerie Peak/Shensheng/)
-[![Aureithe][Aureithe]](http://us.battle.net/wow/en/character/Aerie Peak/Aureithe/)
 [![Vqshorkhas][Vqshorkhas]](http://us.battle.net/wow/en/character/Aerie Peak/Vqshorkhas/)
+[![Aureithe][Aureithe]](http://us.battle.net/wow/en/character/Aerie Peak/Aureithe/)
 
 Ravenholdt-US (RP-PVP)<br />
 [![Adarysong][Adarysong-RH]](http://us.battle.net/wow/en/character/Ravenholdt/Adarysong/)
