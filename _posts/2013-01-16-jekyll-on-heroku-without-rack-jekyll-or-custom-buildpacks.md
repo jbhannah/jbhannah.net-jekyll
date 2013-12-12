@@ -48,7 +48,7 @@ Once they've been compiled by Heroku, the static files are served up by
 [Puma][] and a pair of [Rack::Contrib][] modules: `try_static` and
 `not_found`. `try_static` lets Rack serve up static HTML files and
 tries to match specified paths, and `not_found` tells Rack to serve a
-specific file in the event of a 404 error. Add `rack_contrib` to the
+specific file in the event of a 404 error. Add `rack-contrib` to the
 `Gemfile` and write a Rackup file as follows:
 
 {% gist 4551206 config.ru %}
@@ -80,7 +80,7 @@ answer that provided the solution.
 [a few plugins]: https://github.com/jbhannah/jbhannah.net/tree/master/_plugins
 [Octopress]: http://octopress.org/
 [Rack::TryStatic works just fine]: http://mwmanning.com/2011/12/04/Jekyll-on-Heroku-Part-2.html
-[Heroku's Ruby buildpack]: https://github.com/heroku/heroku-buildpack-ruby/blob/master/lib/language_pack/ruby.rb#L573
+[Heroku's Ruby buildpack]: https://github.com/heroku/heroku-buildpack-ruby/blob/master/lib/language_pack/ruby.rb#L682
 [Rails asset pipeline]: http://guides.rubyonrails.org/asset_pipeline.html
 [CoffeeScript]: http://coffeescript.org/
 [Compass]: http://compass-style.org/
