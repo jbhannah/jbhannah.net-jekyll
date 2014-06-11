@@ -1,14 +1,14 @@
 source "https://rubygems.org"
 ruby "2.1.2"
 
-gem "rake", "10.3.1"
+gem "rake", "10.3.2"
 
 gem "jekyll", "~> 1.0"
 gem "kramdown", "1.3.3"
 gem "flickraw", "0.9.8"
 gem "pygmentize", "0.0.3"
 
-gem "jekyll-assets", "0.7.8"
+gem "jekyll-assets", "0.7.9"
 gem "compass", "0.12.6"
 gem "zurb-foundation", "4.3.2"
 gem "coffee-script", "2.2.0"
