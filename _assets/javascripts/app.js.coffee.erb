@@ -11,7 +11,7 @@ window.fbAsyncInit = ->
 
 $ ->
   $("a[href^=http]").each (index, element) ->
-    if @href.indexOf("http://" + location.hostname) is -1
+    if (@href.indexOf("http://" + location.hostname) is -1) or (@href.indexOf("https://" + location.hostname) is -1)
       rel = $(element).attr "rel"
       unless rel is `undefined`
         rel += " "

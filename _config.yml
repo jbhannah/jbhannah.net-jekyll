@@ -1,4 +1,4 @@
-url: http://jbhannah.net
+url: https://jbhannah.net
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 pygments: true
